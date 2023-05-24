@@ -1,12 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-</head>
-<body>
-    <h2>Profile</h2>
-</body>
-</html>
+{% extends 'base.html'  %}
+
+
+{% block content %}
+
+ <br><br>
+
+<div class="container">
+
+    <h2>{{ post.username}}</h2>
+    <img src="../static/images/TapN_Logo-removebg-preview.png" style="height: 60px; width: 200px;">
+    <a href="{% url 'home' %}"><span>Back</span></a>
+
+</div>
+
+<div class="container">
+
+<div class="wrapper">
+
+      <div class="profile-card">
+
+          <div class="background_banner">
+            
+              <img src="{{post.background_banner.url}}" alt="" style="height: 300px; width: 420px;">
+          </div>
+
+          <div class="profile-body">
+
+                <div class="author-img">
+                    <img src="{{post.profile_picture.url}}" alt="">
+                </div>
+
+                <div class="name">{{post.full_name}}</div>
+                    <h5>{{post.business}}</h5>
+                    <h5>{{post.job_title}}</h5>
+                    <span>Phone: {{post.phone_number}}</span><br>
+                    <span>Email: {{post.email_address}}</span><br>
+                    <span>Website: {{post.website}}</span><br>
+                                    
+                <div class="intro">
+                   <p>{{post.full_name}} is an enthsiastic and passionate story
+                       Teller.He loves to do different
+                        home-made things and share to the world.</p>
+
+                   <button class="msg-btn">Add Contact</button>
+                   <button class="follow-btn"><a href="{% url 'edit' post.pk %}">Edit</a></button>
+                </div>
+
+                <div class="social-icon">
+                  <ul>
+                      <li>
+                          <a href="#">
+                              <i class="fa fa-facebook-f"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <i class="fa fa-twitter"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <i class="fa fa-instagram"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <i class="fa fa-linkedin-square"></i>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#">
+                              <i class="fa fa-apple"></i>
+                          </a>
+                      </li>
+                  </ul>
+                  <br>
+                  <a href="">www.tapncard.com</a>
+                  <br>
+  
+              </div>
+                          
+          </div>
+          
+      </div>
+
+
+  </div>
+
+</div>  
+  <br><br>
+   {% endblock  %}
