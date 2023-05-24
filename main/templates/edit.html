@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+   {% block content %}
+
+   {% if user.is_authenticated %}
+
+   <br><br><hr><br>
+   
+   <div class="container">
+      <h2>Edit Profile</h2>
+      <hr>
+      
+
+   <form method="post"  enctype="multipart/form-data">
+      {% csrf_token %}
+    
+      <!-- User fields -->
+      <label for="user">User:</label>
+      <input type="text" name="user" value="{{ user.id }}"><br><br>
+
+      <label for="card_number">Card number:</label>
+      <input type="text" name="card_number" value="{{ profile.card_number }}"><br><br>
+    
+      <!-- UserProfile fields -->
+      <label for="full_name">Full name:</label>
+      <input type="text" name="full_name" value="{{ profile.full_name }}"><br><br>
+    
+      <label for="business">Business:</label>
+      <input type="text" name="business" value="{{ profile.business }}"><br><br>
+    
+      <label for="phone_number">Phone number:</label>
+      <input type="text" name="phone_number" value="{{ profile.phone_number }}"><br><br>
+    
+      <label for="email_address">Email address:</label>
+      <input type="email" name="email_address" value="{{ profile.email_address }}"><br><br>
+    
+      <label for="website">Website:</label>
+      <input type="url" name="website" value="{{ profile.website }}"><br><br>
+    
+      <label for="job_title">Job title:</label>
+      <input type="text" name="job_title" value="{{ profile.job_title }}"><br><br><br>
+    
+      <label for="background_banner">Background banner:</label>
+      <input type="file" name="background_banner" value="{{ profile.background_banner }}"><br><br>
+    
+      <label for="profile_picture">Profile picture:</label>
+      <input type="file" name="profile_picture" value="{{ post.profile.profile_picture }}"><br><br>
+    
+        
+      <label for="background_color">Select Background Color:</label>
+      <select name="background_color" id="container">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select><br><br><br>
+                  
+      <!-- Social media fields -->
+      <label for="facebook">Facebook:</label>
+      <input type="url" name="facebook" value="{{ profile.facebook }}"><br><br>
+    
+      <label for="instagram">Instagram:</label>
+      <input type="url" name="instagram" value="{{ profile.instagram }}"><br><br>
+    
+      <label for="tiktok">TikTok:</label>
+      <input type="url" name="tiktok" value="{{ profile.tiktok }}"><br><br>
+    
+      <label for="twitter">Twitter:</label>
+      <input type="url" name="twitter" value="{{ profile.twitter }}"><br><br>
+    
+      <label for="linkedin">LinkedIn:</label>
+      <input type="url" name="linkedin" value="{{ profile.linkedin }}"><br><br>
+    
+      <!-- Payment fields -->
+      <label for="paypal">PayPal:</label>
+      <input type="url" name="paypal" value="{{ profile.paypal }}"><br><br>
+    
+      <label for="cashapp">CashApp:</label>
+      <input type="url" name="cashapp" value="{{ profile.cashapp }}"><br><br>
+    
+      <!-- Music fields -->
+      <label for="snap">Snapchat:</label>
+      <input type="url" name="snap" value="{{ profile.snap }}"><br><br>
+    
+      <label for="discord">Discord:</label>
+      <input type="url" name="discord" value="{{ profile.discord }}"><br><br>
+    
+      <label for="twitch">Twitch:</label>
+      <input type="url" name="twitch" value="{{ profile.twitch }}"><br><br>
+    
+      <label for="spotify">Spotify:</label>
+      <input type="url" name="spotify" value="{{ profile.spotify }}"><br><br>
+    
+      <label for="apple_music">Apple Music:</label>
+      <input type="url" name="apple_music" value="{{ profile.apple_music }}"><br><br>
+    
+      <label for="sound_cloud">SoundCloud:</label>
+      <input type="url" name="sound_cloud" value="{{ profile.sound_cloud }}"><br><br><br>
+
+      <button class="btn btn-primary" type="submit" value="Submit">Update Profile</button>
+
+      {% else %}
+
+      <br><br><br>
+      <div class="container">
+      <h1>You are not are not allowed here! Please sign in ...</h1>
+
+      {% endif %}
+
+      </div>
+   </form>
+</div>
+<br><br>
+
+
+          
+   {% endblock %}
+
+    
