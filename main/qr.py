@@ -12,10 +12,10 @@ import qrcode
                    #box_size=50,
                    #border=1)
 
-#qr.add_data("https://bannersbyroz.com/")
+#qr.add_data("https://profile/<int:pk>")
 #qr.make(fit=True)
 
-#img.save("BannersbyrozQR.png")
+#img.save("profile/<int:pk>QR.png")
 
 
 #Example 3

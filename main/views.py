@@ -6,6 +6,7 @@ from .models import Post
 from .forms import ContactForm, PostForm
 import nfc
 import pyqrcode
+from io import BytesIO
 import os
 
 # Create your views here.
@@ -80,7 +81,37 @@ class ProfileView(DetailView):
             return self.generate_vcard(context['post'])
         
         return self.render_to_response(context)
+    
 
+
+     # Create a function to generate a QRCode for a user
+    def generate_qrcode(self, url):
+        # Generate the QR code with a smaller scale
+        qr = pyqrcode.create(url)
+        scale = 5  # Adjust the scale as desired
+
+        # Create a BytesIO object to hold the image data
+        stream = BytesIO()
+        qr.png(stream, scale=scale)
+
+        # Return the image response
+        response = HttpResponse(content_type='image/png')
+        response['Content-Disposition'] = 'inline'
+        response.write(stream.getvalue())
+        return response
+
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        context = self.get_context_data(object=self.object)
+        
+        if 'download_vcard' in request.GET:
+            return self.generate_vcard(context['post'])
+        
+        if 'download_qrcode' in request.GET:
+            profile_url = request.build_absolute_uri(self.object.get_absolute_url())
+            return self.generate_qrcode(profile_url)
+
+        return self.render_to_response(context)
 
 
 #@login_required
