@@ -4,6 +4,8 @@ from django.views.generic import ListView, DetailView, FormView, TemplateView, C
 from django.contrib.auth.decorators import login_required
 from .models import Post
 from .forms import ContactForm, PostForm
+import nfc
+import pyqrcode
 import os
 
 # Create your views here.
@@ -27,7 +29,57 @@ class ProfileView(DetailView):
 
     template_name = 'profile.html'
 
+    # Create a function to generate a vcard for a user
+    def generate_vcard(self, post):
+        first_name = post.full_name.split()[0] if post.full_name else ''
+        last_name = post.full_name.split()[1] if len(post.full_name.split()) > 1 else ''
+        company = post.business if post.business else ''
+        title = post.job_title if post.job_title else ''
+        phone_number = post.phone_number if post.phone_number else ''
+        address = ''
+        email = post.email_address if post.email_address else ''
 
+        vcard = self.make_vcard(first_name, last_name, company, title, phone_number, address, email)
+        vcf_file = f'{first_name.lower()}.vcf'
+        self.write_vcard(vcf_file, vcard)
+
+        with open(vcf_file, 'rb') as f:
+            response = HttpResponse(f.read(), content_type='text/vcard')
+            response['Content-Disposition'] = f'attachment; filename="{post.full_name.lower()}.vcf"'
+
+        # Clean up the generated vCard file
+        os.remove(vcf_file)
+
+        return response
+
+    def make_vcard(self, first_name, last_name, company, title, phone, address, email):
+        address_formatted = ';'.join([p.strip() for p in address.split(',')])
+        return [
+            'BEGIN:VCARD',
+            'VERSION:2.1',
+            f'N:{last_name};{first_name}',
+            f'FN:{first_name} {last_name}',
+            f'ORG:{company}',
+            f'TITLE:{title}',
+            f'EMAIL;PREF;INTERNET:{email}',
+            f'TEL;WORK;VOICE:{phone}',
+            f'ADR;WORK;PREF:;;{address_formatted}',
+            f'REV:1',
+            'END:VCARD'
+        ]
+
+    def write_vcard(self, file_path, vcard):
+        with open(file_path, 'w') as f:
+            f.writelines([l + '\n' for l in vcard])
+
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        context = self.get_context_data(object=self.object)
+        
+        if 'download_vcard' in request.GET:
+            return self.generate_vcard(context['post'])
+        
+        return self.render_to_response(context)
 
 
 
