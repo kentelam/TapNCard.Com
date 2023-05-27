@@ -4,6 +4,7 @@ from django.views.generic import ListView, DetailView, FormView, TemplateView, C
 from django.contrib.auth.decorators import login_required
 from .models import Post
 from .forms import ContactForm, PostForm
+from django.core.files.base import ContentFile
 import nfc
 import pyqrcode
 from io import BytesIO
@@ -94,10 +95,14 @@ class ProfileView(DetailView):
         stream = BytesIO()
         qr.save(stream, kind='png')
 
+        # Create a ContentFile from the BytesIO data
+        image_file = ContentFile(stream.getvalue())
+
         # Create an HttpResponse with the image data
         response = HttpResponse(content_type='image/png')
         response['Content-Disposition'] = 'inline'
-        response.write(stream.getvalue())
+        response['Content-Length'] = image_file.size
+        response.write(image_file.read())
 
         return response
 
