@@ -92,7 +92,7 @@ class ProfileView(DetailView):
 
         # Create a BytesIO object to hold the image data
         stream = BytesIO()
-        qr.sgv(stream, scale=scale)
+        qr.svg(stream, scale=scale)
 
         # Return the image response
         response = HttpResponse(content_type='image/png')
