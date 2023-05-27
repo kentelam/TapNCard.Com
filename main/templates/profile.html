@@ -162,6 +162,11 @@
                       </a>
             </div>
             </div>
+            <div id="qr">
+                <h4>Profile QR Code</h4>
+                <img src="{% url 'profile' post.pk %}?download_qrcode" alt="Profile QR Code">
+            
+                </div> 
           <br>
                     <a href="#">www.tapncard.com</a>
                     <br><br>
@@ -174,13 +179,7 @@
   <br>
   <br>
   <br>
-<div class="profile-card">
-  <div id="qr">
-    <h4>Profile QR Code</h4>
-    <img src="{% url 'profile' post.pk %}?download_qrcode" alt="Profile QR Code">
 
-    </div> 
-</div>
 
   {% endblock  %}
 
