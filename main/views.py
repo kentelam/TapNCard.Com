@@ -88,7 +88,7 @@ class ProfileView(DetailView):
     def generate_qrcode(self, url):
     # Generate the QR code with a smaller scale
         qr = pyqrcode.create(url)
-        scale = 2  # Adjust the scale as desired
+        scale = 5  # Adjust the scale as desired
 
         # Create a BytesIO object to hold the image data
         stream = BytesIO()
