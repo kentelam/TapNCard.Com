@@ -4,11 +4,9 @@ from django.views.generic import ListView, DetailView, FormView, TemplateView, C
 from django.contrib.auth.decorators import login_required
 from .models import Post
 from .forms import ContactForm, PostForm
-from django.core.files.base import ContentFile
 import nfc
 import pyqrcode
 from io import BytesIO
-import segno
 import os
 
 # Create your views here.
@@ -88,22 +86,18 @@ class ProfileView(DetailView):
 
      # Create a function to generate a QRCode for a user
     def generate_qrcode(self, url):
-        # Generate the QR code with styling options
-        qr = segno.make(url, error='q', micro=True, dark='darkblue', data_dark='steelblue', scale=5)
+    # Generate the QR code with a smaller scale
+        qr = pyqrcode.create(url)
+        scale = 2  # Adjust the scale as desired
 
         # Create a BytesIO object to hold the image data
         stream = BytesIO()
-        qr.save(stream, kind='png')
+        qr.png(stream, scale=scale)
 
-        # Create a ContentFile from the BytesIO data
-        image_file = ContentFile(stream.getvalue())
-
-        # Create an HttpResponse with the image data
+        # Return the image response
         response = HttpResponse(content_type='image/png')
         response['Content-Disposition'] = 'inline'
-        response['Content-Length'] = image_file.size
-        response.write(image_file.read())
-
+        response.write(stream.getvalue())
         return response
 
     def get(self, request, *args, **kwargs):
