@@ -127,7 +127,8 @@
       .btn-social
       {
           border-radius: 50%;
-          color: #ffffff !important;
+          border: solid grey 1px;
+          color: grey !important;
           display: inline-block;
           height: 54px;
           line-height: 54px;
@@ -191,7 +192,7 @@
       
       .btn-behance
       {
-          background-color: #1769ff;
+          background-color: white;
       }
       .btn-behance:hover
       {
