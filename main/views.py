@@ -89,13 +89,16 @@ class ProfileView(DetailView):
     def generate_qrcode(self, url):
         # Generate the QR code with styling options
         qr = segno.make(url, error='q', micro=True, dark='darkblue', data_dark='steelblue', scale=5)
-        qr.save('qrcode.png')
 
-        # Read the image file and return the response
-        with open('qrcode.png', 'rb') as f:
-            response = HttpResponse(content_type='image/png')
-            response['Content-Disposition'] = 'inline'
-            response.write(f.read())
+        # Create a BytesIO object to hold the image data
+        stream = BytesIO()
+        qr.save(stream, kind='png')
+
+        # Create an HttpResponse with the image data
+        response = HttpResponse(content_type='image/png')
+        response['Content-Disposition'] = 'inline'
+        response.write(stream.getvalue())
+
         return response
 
     def get(self, request, *args, **kwargs):
