@@ -27,6 +27,7 @@
   }
   .profile-card .background_banner{
       height: 180px;
+      width: auto;
       border-radius: 20px;
       
   }
