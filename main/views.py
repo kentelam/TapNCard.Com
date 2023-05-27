@@ -7,6 +7,7 @@ from .forms import ContactForm, PostForm
 import nfc
 import pyqrcode
 from io import BytesIO
+import segno
 import os
 
 # Create your views here.
@@ -86,18 +87,15 @@ class ProfileView(DetailView):
 
      # Create a function to generate a QRCode for a user
     def generate_qrcode(self, url):
-        # Generate the QR code with a smaller scale
-        qr = pyqrcode.create(url)
-        scale = 5  # Adjust the scale as desired
+        # Generate the QR code with styling options
+        qr = segno.make(url, error='q', micro=True, dark='darkblue', data_dark='steelblue', scale=5)
+        qr.save('qrcode.png')
 
-        # Create a BytesIO object to hold the image data
-        stream = BytesIO()
-        qr.png(stream, scale=scale)
-
-        # Return the image response
-        response = HttpResponse(content_type='image/png')
-        response['Content-Disposition'] = 'inline'
-        response.write(stream.getvalue())
+        # Read the image file and return the response
+        with open('qrcode.png', 'rb') as f:
+            response = HttpResponse(content_type='image/png')
+            response['Content-Disposition'] = 'inline'
+            response.write(f.read())
         return response
 
     def get(self, request, *args, **kwargs):
