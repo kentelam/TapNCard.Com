@@ -21,7 +21,7 @@
       width: 26em;
       height: auto;
       text-align: center;
-      margin: 10px auto;
+      margin: 5px auto;
       box-shadow:  0px 0px 18px #ccc;
       
   }
@@ -34,7 +34,7 @@
   .profile-card .profile-body{
       background-color: var(--white);
      
-     padding: 10px;
+     padding: 5px;
   }
   
   .profile-card .profile-body .author-img{
