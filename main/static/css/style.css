@@ -34,7 +34,7 @@
   .profile-card .profile-body{
       background-color: var(--white);
      
-     
+     padding: 10px;
   }
   
   .profile-card .profile-body .author-img{
