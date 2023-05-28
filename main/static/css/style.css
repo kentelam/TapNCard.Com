@@ -130,8 +130,7 @@
 
       .social-section {
         background-color: #f2f2f2;
-        max-width: 27em;
-        text-align: center;
+        
         padding: 20px 0;
       }
       
@@ -143,6 +142,7 @@
       .social-icons {
         display: flex;
         flex-wrap: wrap;
+        max-width: 27em;
         justify-content: center;
       }
       
