@@ -149,7 +149,7 @@
         height: 50px;
         margin: 10px;
         border-radius: 50%;
-        filter: grayscale(0%);
+        
       }
       
       .social-icon:hover {
