@@ -18,7 +18,7 @@
      
   }
   .profile-card{
-      width: 27em;
+      width: 26em;
       height: auto;
       text-align: center;
       margin: 10px auto;
@@ -33,7 +33,7 @@
   
   .profile-card .profile-body{
       background-color: var(--white);
-      padding: 20px 40px 40px 30px;
+      padding: 20px 40px 40px 40px;
      
   }
   
