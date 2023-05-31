@@ -1,0 +1,358 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>TapNCard.Com</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">    
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+
+  <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+  <link href="../static/css/custom.css" rel="stylesheet">
+  <link href="../static/css/style.css" rel="stylesheet">
+ 
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<br><br><br><br>
+
+<div class="container">
+  <a href="{% url 'home' %}"><span>Back</span></a>
+</div>
+
+<div class="container">
+  <div class="wrapper">
+    <div class="profile-card">
+      <div class="profile-header">
+        <img id="banner" src="{{post.background_banner.url}}" alt="">
+      </div>
+
+      <div class="profile-body {% if post.background_color %}{{ post.background_color }}{% endif %}">
+        <div class="author-img">
+          <img src="{{post.profile_picture.url}}" alt="">
+        </div>
+
+        <div class="name">{{post.full_name}}</div>
+        <h5>{{post.business}}</h5>
+        <h5>{{post.job_title}}</h5>
+        <span>Phone: {{post.phone_number}}</span><br>
+        <span>Email: {{post.email_address}}</span><br>
+        <span>Website: {{post.website}}</span><br>
+
+        <div class="intro">
+          <p>{{post.full_name}} is an enthusiastic and passionate storyteller. He loves to do different home-made things and share them with the world.</p>
+
+          <button class="msg-btn"><a href="?download_vcard=True">Add Contact</a></button>
+          <button class="follow-btn"><a href="{% url 'edit' post.pk %}">Edit</a></button>
+                   
+          <br><br>
+          <a href="">www.tapncard.com</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    
+
+        
+        <div class="social-section">
+            <h4>Social Media Hub</h4>
+              <div class="social-icons">
+                <br><br><br><br>
+               
+                <a href="{{ profile.facebook }}">
+                  <img src="/TapNCard/members/profile/static/images/icons8-facebook-48.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="{{ profile.instagram }}">
+                  <img src="/TapNCard/members/static/images/icons8-instagram-48.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="{{ profile.tiktok }}">
+                  <img src="../static/images/icons8-tiktok-48.png" alt="TikTok" class="social-icon">
+                </a>
+                <a href="{{ profile.twitter }}">
+                  <img src="../static/images/icons8-twitter-48.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="{{ profile.linkedin }}">
+                  <img src="../static/images/icons8-linkedin-48.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="{{ profile.paypal }}">
+                  <img src="../static/images/icons8-paypal-48.png" alt="PayPal" class="social-icon">
+                </a>
+                <a href="{{ profile.cashapp }}">
+                  <img src="../static/images/icons8-cashapp-instantly-send-money-between-friends-or-accept-card-payments-for-your-business-48.png" alt="CashApp" class="social-icon">
+                </a>
+                <a href="{{ profile.snap }}">
+                  <img src="../static/images/icons8-snapchat-48.png" alt="Snap" class="social-icon">
+                </a>
+                <a href="{{ profile.discord }}">
+                  <img src="../static/images/icons8-discord-48.png" alt="Discord" class="social-icon">
+                </a>
+                <a href="{{ profile.twitch }}">
+                  <img src="../static/images/icons8-twitch-48.png" alt="Twitch" class="social-icon">
+                </a>
+                <a href="{{ profile.spotify }}">
+                  <img src="../static/images/icons8-spotify-48.png" alt="Spotify" class="social-icon">
+                </a>
+                <a href="{{ profile.apple_music }}">
+                  <img src="../static/images/icons8-music-48.png" alt="Apple Music" class="social-icon">
+                </a>
+                <a href="{{ profile.sound_cloud }}">
+                  <img src="../static/images/icons8-youtube-48.png" alt="YouTube" class="social-icon">
+                </a>
+                <a href="{{ profile.sound_cloud }}">
+                    <img src="../static/images/icons8-venmo-64.png" alt="Venmo" class="social-icon">
+                  </a>
+                  <a href="{{ profile.sound_cloud }}">
+                    <img src="../static/images/icons8-soundcloud-48.png" alt="SoundCloud" class="social-icon">
+                  </a>
+                  <a href="{{ profile.sound_cloud }}">
+                    <img src="../static/images/pngwing.com.png" alt="OnlyFans" class="social-icon">
+                  </a>
+                  <a href="{{ profile.sound_cloud }}">
+                    <img src="../static/images/zelle-logo-3.png" alt="zelle" class="social-icon">
+                  </a>
+                  <a href="{{ profile.sound_cloud }}">
+                    <img src="../static/images/pngwing.com.png" alt="OnlyFans" class="social-icon">
+                  </a>
+                  <a href="{{ profile.sound_cloud }}">
+                    <img src="../static/images/icons8-pinterest-48.png" alt="pinterest" class="social-icon">
+                  </a>
+                  <a href="{{ profile.sound_cloud }}">
+                    <img src="../static/images/icons8-patreon-48.png" alt="patreon" class="social-icon">
+                  </a>
+                  
+                                    
+              </div>
+              
+          </div>
+          
+                   
+    
+    
+      </div>
+
+      
+
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="qr">
+    <small>Profile QR Code</small><br><br>
+    <img src="{% url 'profile' post.pk %}?download_qrcode" alt="Profile QR Code">
+
+    </div> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <style>
+
+
+:root{
+    --light:#f1f1f1;
+    --white:#fff;
+    --dark:#000;
+  }
+  body{
+      font-family: 'Montserrat', sans-serif; 
+        background-color: var(--light);
+  }
+  img{
+      width: 100%;
+      height: auto;
+  }
+  #banner{
+    width: 100%;
+      height: 300px;
+  }
+  .wrapper{
+      width: 100%;
+      height: 100vh;
+     
+  }
+  .profile-card{
+      width: 25.25em;
+      height: auto;
+      text-align: center;
+      margin: 20px auto;
+      box-shadow:  0px 0px 18px #ccc;
+      
+  }
+  .profile-card .profile-header{
+      height: 180px;
+  }
+  
+  .profile-card .profile-body{
+      background-color: var(--white);
+      padding: 20px 40px 40px 40px;
+     
+  }
+  
+  .profile-card .profile-body.--light {
+    background-color: var(--light);
+  }
+  
+  .profile-card .profile-body.--white {
+    background-color: var(--white);
+  }
+  
+  .profile-card .profile-body.--dark {
+    background-color: var(--dark);
+  }
+  
+  .profile-card .profile-body.--purple {
+    background-color: var(--purple);
+  }
+  
+  
+  .profile-card .profile-body .author-img{
+      margin-top: -20px;
+      margin-bottom: 20px;
+  }
+  .profile-card .profile-body .author-img img{
+      width: 170px;
+      height: 170px;
+      border-radius: 50%; 
+      padding: 5px;
+      background-color: var(--white);
+  }
+  
+  .profile-card .profile-body .name{
+     font-size: 20px;
+     font-weight: 600;
+     text-transform: uppercase;
+  
+  }
+  .profile-card .profile-body .intro{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1.6;
+     margin: 20px  0px 30px  0px;
+  
+  }
+  .social-section {
+      background-color: #f2f2f2;
+      text-align: center;
+      align-items: center;
+      padding: 20px 0;
+     
+    }
+  
+    
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 24em;
+      margin: auto;
+      justify-content: center;
+      background-color: #fff;
+      box-shadow:  0px 0px 18px #ccc;
+     
+    }
+  
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      border-radius: 50%;
+      
+    }
+    
+    .social-icon:hover {
+      size: 80px;
+    }
+    
+  
+    button{
+      margin: 10px 0 40px 0;
+    }
+    .msg-btn, .follow-btn{
+      background: #1a1919;
+      border: 2px solid #878787;
+      padding: 14px 36px;
+      color: white;
+      border-radius: 4px;
+      font-family: Montserrat, sans-serif;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  
+    .msg-btn > a{
+      text-decoration: none;
+    }
+  
+    .follow-btn > a{
+      text-decoration: none;
+    }
+    .follow-btn{
+      margin-left: 10px;
+      background: transparent;
+      color: white;
+      text-decoration: none;
+    }
+    .follow-btn:hover{
+      color: #231e39;
+      background: #03bfbc;
+      transition: .5s;
+    }
+  
+  
+    #qr{
+  
+      height: 100px;
+      width: 100px;
+      margin: auto;
+      text-align: center;
+  
+    }
+
+  </style>
+
+
+  {% endblock  %}
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  
