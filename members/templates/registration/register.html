@@ -4,21 +4,28 @@
 
 <div class="container">
 
-<h2>Register</h2><br><hr>
+    <br>
+    <h2>Register</h2><hr><br><br>
 
-<form method="POST">
+        <div class="container">
 
-    {% csrf_token %}
+            <form method="POST">
 
-    {{ form.as_p }}
+                {% csrf_token %}
 
-    <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+                {{ form.as_p }}
 
-</form>
+                <br>
 
-<br/>
+                <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+    <br/>
 
 </div>
-
+<br><br>
 
 {% endblock  %}
