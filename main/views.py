@@ -20,7 +20,7 @@ class HomeView(ListView):
 
     model = Post
 
-    template_name = 'home.html'
+    template_name = 'main/home.html'
 
 
 
@@ -29,10 +29,10 @@ class ContactFormView(FormView):
 
     form_class = ContactForm
 
-    template_name = 'contact.html'
+    template_name = 'main/contact.html'
 
     # URL NOT a template.html
-    success_url = 'thankyou.html'
+    success_url = 'main/thankyou.html'
 
     # what to do with form?
     def form_valid(self, form):

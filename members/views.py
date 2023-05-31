@@ -22,7 +22,7 @@ class ProfileView(DetailView):
 
     model = Post
 
-    template_name = 'profile.html'
+    template_name = 'members/profile.html'
 
     # Create a function to generate a vcard for a user
     def generate_vcard(self, post):
@@ -187,5 +187,5 @@ def profile_editor(request, pk):
         return redirect('profile', pk=profile.pk)
 
 
-    return render(request, 'edit.html', {'profile': profile, 'background_color':profile.background_color})
+    return render(request, 'members/edit.html', {'profile': profile, 'background_color':profile.background_color})
 
