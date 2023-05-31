@@ -75,12 +75,15 @@
     <span>{{post.username}}</span><br><a href="{% url 'edit' post.pk %}">Edit</a><br/>
     
     <div class="card" style="width: 18rem;">
+        
         {% if post.profile_picture %}
     
         <img src="{{post.profile_picture.url}}"  style="height: 200px; width: 200px;" class="img-responsive img-rounded" alt="...">
         
         {% else %}
+
       <img src="../static/images/Tap N Double Card.png" style="height: 300px; width: 250px;" class="card-img-top" alt="...">
+
         {% endif %}
     
         

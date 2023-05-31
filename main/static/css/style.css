@@ -18,7 +18,7 @@
      
   }
   .profile-card{
-      width: 24em;
+      width: 25em;
       height: auto;
       text-align: center;
       margin: 5px auto;
@@ -135,8 +135,8 @@
         
       }
       
-      #container {
-        max-width: 27em;
+      .container {
+        
         margin: 0 auto;
       }
       
