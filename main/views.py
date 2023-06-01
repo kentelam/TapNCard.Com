@@ -22,6 +22,18 @@ class HomeView(ListView):
 
     template_name = 'main/home.html'
 
+    context_object_name = 'posts'
+    
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        
+        # Retrieve the post object based on your logic
+        post = Post.objects.first()  # Replace this with your actual logic
+        
+        context['post'] = post
+        return context
+
 
 def search_view(request):
 
