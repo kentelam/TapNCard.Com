@@ -1,0 +1,43 @@
+{% extends 'base.html'  %}
+
+{% block content %}
+
+<div class="container">
+    <br>
+    <h1>You Searched For...</h1>
+    <hr><br><br>
+
+        <div class="container">
+
+            {% if searched %}
+
+            <h3>You Searched For {{ searched }}</h3>
+
+            <br/>
+
+            {% for profile in profile %}
+            
+
+                <ul><li>{{ profile }}</li></ul><br/>
+
+
+            {% endfor %}
+
+            {% else %}
+
+            <h3>You Forgot To Enter A Search Request</h3>
+
+            {% endif %}
+           
+
+        </div>    
+
+
+</div>
+
+<br/>
+
+<br><br>
+
+
+{% endblock  %}

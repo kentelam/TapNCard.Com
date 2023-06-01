@@ -23,6 +23,26 @@ class HomeView(ListView):
     template_name = 'main/home.html'
 
 
+def search_view(request):
+
+    if request.method == 'POST':
+
+        searched = request.POST['searched']
+
+        profile = Post.objects.filter(username__contains=searched )
+
+
+        return render(request, 'main/search.html', {
+
+            'searched': searched,
+            'profile':profile
+        })
+    
+    else:
+        return render(request, 'main/search.html')
+
+
+
 
 
 class ContactFormView(FormView):
