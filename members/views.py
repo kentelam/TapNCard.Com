@@ -24,6 +24,24 @@ class ProfileView(DetailView):
 
     template_name = 'members/profile.html'
 
+
+    # Search Function to Query Post model in multiple fields
+    def get_queryset(self):
+
+        queryset = super().get_queryset()
+        search_query = self.request.GET.get('search')
+        if search_query:
+            queryset = queryset.filter(
+                Q(username__icontains=search_query) |
+                Q(company__icontains=search_query) |
+                Q(phone__icontains=search_query) |
+                Q(email__icontains=search_query) |
+                Q(website__icontains=search_query) |
+                Q(title__icontains=search_query)
+            )
+        return queryset
+
+
     # Create a function to generate a vcard for a user
     def generate_vcard(self, post):
         first_name = post.full_name.split()[0] if post.full_name else ''

@@ -35,7 +35,7 @@ def search_view(request):
         return render(request, 'main/search.html', {
 
             'searched': searched,
-            'profile':profile
+            'profile':profile,
         })
     
     else:

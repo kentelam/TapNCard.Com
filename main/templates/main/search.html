@@ -15,10 +15,9 @@
 
             <br/>
 
-            {% for profile in profile %}
+            {% for post in profile %}
             
-
-                <ul><li>{{ profile }}</li></ul><br/>
+            <a href="{% url 'profile' post.pk %}">{{ post.username }}</a><br/>
 
 
             {% endfor %}
