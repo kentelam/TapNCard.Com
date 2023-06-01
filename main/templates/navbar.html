@@ -47,7 +47,11 @@
 
                   <li><hr class="dropdown-divider"></li>
 
-                  <li><a class="dropdown-item" href="{% url 'profile' post.pk %}">Profile</a></li>
+                                          {% if user.is_authenticated %}
+
+                  <li><a class="dropdown-item" href="{% url 'profile' user.id %}">Profile</a></li>
+
+                                          {% endif %}
                 </ul>
               </li>
               
