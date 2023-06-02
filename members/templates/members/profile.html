@@ -31,7 +31,7 @@
           <button class="follow-btn"><a href="{% url 'edit' post.pk %}">Edit</a></button>
                    
           <br><br>
-          <a href="">www.tapncard.com</a>
+          <a href="{% url 'home' %}">www.tapncard.com</a>
         </div>
       </div>
     </div>
@@ -62,96 +62,124 @@
 
                 <div class="social-buttons">        
                   <!-- facebook  Button -->
-                          <a href="http://www.facebook.com/{{ post.facebook }}" target="blank" class="social-margin"> 
+                  <small>Facebook</small>
+                          <a href="{{ post.facebook }}" target="blank" class="social-margin"> 
                             <div class="social-icon facebook">
                               <i class="fa fa-facebook" aria-hidden="true"></i> 
                             </div>
                           </a>
                           <!-- pinterest Button -->
-                          <a href="https://pinterest.com/{{ post.pinterest }}" target="blank"  class="social-margin">
+                          <small>Pinterest</small>
+                          <a href="{{ post.pinterest }}" target="blank"  class="social-margin">
                             <div class="social-icon pinterest">
                               <i class="fa fa-pinterest" aria-hidden="true"></i>
                             </div>
                           </a>
                           <!-- LinkedIn Button -->
-                          <a href="http://linkedin.com/{{ post.linkedin }}" class="social-margin" target="blank">
+                          <small>Linkedin</small>
+                          <a href="{{ post.linkedin }}" class="social-margin" target="blank">
                             <div class="social-icon linkedin">
                               <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </div> 
                           </a>
-                          <!-- Github Button -->
-                          <a href="https://github.com/"  target="blank"  class="social-margin">
-                            <div class="social-icon github">
-                              <i class="fa fa-github-alt" aria-hidden="true"></i>
+                          <!-- Instagram Button -->
+                          <small>Instagram</small>
+                          <a href="{{ post.instagram }}"  target="blank"  class="social-margin">
+                            <div class="social-icon instagram">
+                              <i class="fa fa-instagram-alt" aria-hidden="true"></i>
                             </div>
-                          </a>
+                          </a><br><br>
                           <!-- Youtube Button -->
-                          <a href="http://youtube.com/{{ post.youtube }}" target="blank"  class="social-margin">
+                          <small>Youtube</small>
+                          <a href="{{ post.youtube }}" target="blank"  class="social-margin">
                             <div class="social-icon youtube">
                               <i class="fa fa-youtube" aria-hidden="true"></i>
                             </div> 
                           </a>
-                          <!-- Behance Button -->
-                          <a href="https://behance.com/"  target="blank" class="social-margin">
+                          <!-- Apple Music Button -->
+                          <small>Apple Music</small>
+                          <a href="{{ post.apple_music }}"  target="blank" class="social-margin">
                             <div class="social-icon apple">
                               <i class="fa fa-apple" aria-hidden="true"></i>
                             </div>
                           </a>
-                          <!-- Soundcloud Button -->
-                          <a href="http://soundcloud.com/{{ post.sound_cloud }}" target="blank" class="social-margin">
-                            <div class="social-icon soundcloud">
-                              <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                          <!-- Spotify Button -->
+                          <small>Spotify</small>
+                          <a href="{{ post.spotify }}" target="blank" class="social-margin">
+                            <div class="social-icon spotify">
+                              <i class="fa fa-spotify" aria-hidden="true"></i>
                             </div> 
                           </a>
                           <!-- TwitterButton -->
-                          <a href="http://twitter.com/{{ post.twitter }}" target="blank" class="social-margin">
+                          <small>Twitter</small>
+                          <a href="{{ post.twitter }}" target="blank" class="social-margin">
                             <div class="social-icon twitter">
                               <i class="fa fa-twitter" aria-hidden="true"></i>
                             </div> 
-                          </a>
+                          </a><br><br>
                             <!-- facebook  Button -->
-                            <a href="http://www.facebook.com" target="blank" class="social-margin"> 
+                            <small>Facebook</small>
+                            <a href="{{ post.facebook }}" target="blank" class="social-margin"> 
                               <div class="social-icon facebook">
                                 <i class="fa fa-facebook" aria-hidden="true"></i> 
                               </div>
                             </a>
                             <!-- pinterest Button -->
-                            <a href="https://pinterest.com/" target="blank"  class="social-margin">
+                            <small>Pinterest</small>
+                            <a href="{{ post.pinterest }}" target="blank"  class="social-margin">
                               <div class="social-icon pinterest">
                                 <i class="fa fa-pinterest-p" aria-hidden="true"></i>
                               </div>
                             </a>
                             <!-- LinkedIn Button -->
-                            <a href="http://linkedin.com/" class="social-margin" target="blank">
+                            <small>Linkedin</small>
+                            <a href="{{ post.linkedin }}" class="social-margin" target="blank">
                               <div class="social-icon linkedin">
                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                               </div> 
                             </a>
+                            
+
                             <!-- Github Button -->
+                            <small>Github</small>
                             <a href="https://github.com/"  target="blank"  class="social-margin">
                               <div class="social-icon github">
                                 <i class="fa fa-github-alt" aria-hidden="true"></i>
                               </div>
-                            </a>
+                            </a><br><br>
+                            
                             <!-- Youtube Button -->
-                            <a href="http://youtube.com/" target="blank"  class="social-margin">
+                            <small>Youtube</small>
+                            <a href="{{ post.youtube }}" target="blank"  class="social-margin">
                               <div class="social-icon youtube">
                                 <i class="fa fa-youtube" aria-hidden="true"></i>
                               </div> 
                             </a>
-                            <!-- Behance Button -->
-                            <a href="https://behance.com/"  target="blank" class="social-margin">
-                              <div class="social-icon behance">
-                                <i class="fa fa-behance" aria-hidden="true"></i>
-                              </div>
+                            
+                            <!-- TikTok Button -->
+                            <small>TikTok</small>
+                            <a href="{{ post.tiktok }}"  target="blank" class="social-margin">
+                              <div class="social-icon tiktok">
+                                <i class="fa fa-tiktok" aria-hidden="true"></i>                          
+                              </div>                              
                             </a>
+                            
                             <!-- Soundcloud Button -->
-                            <a href="http://soundcloud.com/" target="blank" class="social-margin">
+                            <small>Sound Cloud</small>
+                            <a href="{{ post.sound_cloud }}" target="blank" class="social-margin">
                               <div class="social-icon soundcloud">
                                 <i class="fa fa-soundcloud" aria-hidden="true"></i>
-                              </div> 
+                              </div>                              
                             </a>
-                           
+
+                            <!-- TwitterButton -->
+                          <small>Twitter</small>
+                          <a href="{{ post.twitter }}" target="blank" class="social-margin">
+                            <div class="social-icon twitter">
+                              <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </div> 
+                          </a>
+                            
                     </div>
                   </div>
                   
@@ -294,7 +322,7 @@
     .social-icons {
       display: flex;
       flex-wrap: wrap;
-      max-width: 22.50em;
+      max-width: 23em;
       margin: auto;
       justify-content: center;
       background-color: #fff;
