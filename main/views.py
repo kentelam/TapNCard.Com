@@ -56,6 +56,11 @@ def search_view(request):
 
 
 
+def about(request):
+    return render(request, 'main/about.html', {})
+
+
+
 
 class ContactFormView(FormView):
 
