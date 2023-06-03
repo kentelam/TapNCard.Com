@@ -93,7 +93,7 @@
                            </div>
 									<!-- Button -->
 									<label for="profile_picture">Profile picture:</label>
-                           <input type="file" name="profile_picture">
+                           			<input type="file" name="profile_picture">
 									<!-- Content -->
 									<p class="text-muted mt-3 mb-0"><span class="me-1">Note:</span>Minimum size 300px x 300px</p>
 								</div>
@@ -206,7 +206,7 @@
 									<label class="form-label"><i class="fab fa-fw fa-soundcloud text-soundcloud"></i>Sound Cloud *</label>
 									<input type="url" name="sound_cloud" value="{{ profile.sound_cloud }}" class="form-control" placeholder="" >
 								</div>
-                        
+								
 							</div> <!-- Row END -->
 						</div>
 					</div>
@@ -241,14 +241,10 @@
 					<button type="submit" value="Submit" class="btn btn-primary btn-lg">Update profile</button>
 				</div>
 			</form> <!-- Form END -->
+			
 		</div>
 	</div>
-	</div>
-
-       
-      <label for="background_color">Select Background Color:</label>
-      <select name="background_color">
-         <option value="" selected disabled>Select Color</option>
+	</div>	
 
          {% for color in post.get_background_color_display %}
 
@@ -274,6 +270,7 @@
       </div>
    </form>
 </div>
+
 <br><br>
 
 <style>
@@ -341,4 +338,6 @@ color: #9b9ca1;
           
    {% endblock %}
 
-    
+   <label for="background_color">Select Background Color:</label>
+   <select name="background_color">
+   <option value="{{profile.background_color}}" selected disabled>Select Color</option>
