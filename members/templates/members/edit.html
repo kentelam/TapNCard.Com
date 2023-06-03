@@ -6,65 +6,246 @@
 
    {% if user.is_authenticated %}
 
-   <br><br>
    
-   <div class="container">
-      
-      <h2>Edit Profile</h2>
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
 
-      <hr><br>
-      
+<div class="container">
+<div class="row">
+		<div class="col-12">
+			<!-- Page title -->
+			<div class="my-5">
+				<h3>Profile Editor</h3>
+				<hr>
+			</div>
+			<!-- Form START -->
+			<form method="post"  enctype="multipart/form-data" class="file-upload">
+            {% csrf_token %}
+				<div class="row mb-5 gx-5">
+					<!-- Contact detail -->
+					<div class="col-xxl-8 mb-5 mb-xxl-0">
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3">
+								<h4 class="mb-4 mt-0">Contact detail</h4>
+								<!-- First Name -->
+								<div class="col-md-6">
+									<label class="form-label">Username *</label>
+									<input type="text" name="user" class="form-control" placeholder="username"  value="{{ user.id }}">
+								</div>
+								<!-- Full name -->
+								<div class="col-md-6">
+									<label class="form-label">Full Name *</label>
+									<input type="text" name="full_name" class="form-control" placeholder="Full Name"  value="{{ profile.full_name }}">
+								</div>
+                        <!-- Company name -->
+								<div class="col-md-6">
+									<label class="form-label">Business Name *</label>
+									<input type="text" name="business" class="form-control" placeholder="" value="{{ profile.business }}">
+								</div>
+                        <!-- Company Title -->
+								<div class="col-md-6">
+									<label class="form-label">Business Title *</label>
+									<input type="text" name="job_title" class="form-control" placeholder=""  value="{{ profile.job_title }}">
+								</div>
+								<!-- Phone number -->
+								<div class="col-md-6">
+									<label class="form-label">Phone number *</label>
+									<input type="text" name="phone_number" class="form-control" placeholder=""  value="{{ profile.phone_number }}">
+								</div>
+								<!-- Mobile number -->
+								<div class="col-md-6">
+									<label class="form-label">Mobile number *</label>
+									<input type="text" class="form-control" placeholder=""  value="+91 9852 8855 252">
+								</div>
+								<!-- Email -->
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">Email *</label>
+                        <label for="email_address">Email address:</label>
+                        <input type="email" name="email_address" class="form-control" id="inputEmail4" value="{{ profile.email_address }}">
+								</div>
+								<!-- Website -->
+								<div class="col-md-6">
+									<label class="form-label">Website *</label>
+									<input type="url" name="website" class="form-control" placeholder=""  value="{{ profile.website }}">
+								</div>
+							</div> <!-- Row END -->
+						</div>
+					</div>
+					<!-- Upload profile -->
+					<div class="col-xxl-4">
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3">
+								<h4 class="mb-4 mt-0">Upload your profile photo</h4>
+								<div class="text-center">
 
-   <form method="post"  enctype="multipart/form-data">
-      {% csrf_token %}
-    
-      <!-- User fields -->
-      <label for="user">User:</label>
-      <input type="text" name="user" value="{{ user.id }}"><br><br>
+									<!-- Profile Image upload -->
+									<div class="square position-relative display-2 mb-3">
 
-      <label for="card_number">Card number:</label>
-      <input type="text" name="card_number" value="{{ profile.card_number }}"><br><br>
-    
-      <!-- UserProfile fields -->
-      <label for="full_name">Full name:</label>
-      <input type="text" name="full_name" value="{{ profile.full_name }}"><br><br>
-    
-      <label for="business">Business:</label>
-      <input type="text" name="business" value="{{ profile.business }}"><br><br>
-    
-      <label for="phone_number">Phone number:</label>
-      <input type="text" name="phone_number" value="{{ profile.phone_number }}"><br><br>
-    
-      <label for="email_address">Email address:</label>
-      <input type="email" name="email_address" value="{{ profile.email_address }}"><br><br>
-    
-      <label for="website">Website:</label>
-      <input type="url" name="website" value="{{ profile.website }}"><br><br>
-    
-      <label for="job_title">Job title:</label>
-      <input type="text" name="job_title" value="{{ profile.job_title }}"><br><br><br>
-    
-      <label for="background_banner">Background banner:</label>
-      <input type="file" name="background_banner" ><br><br>
+                              {% if profile.profile_picture %}
 
-      {% if profile.background_banner %}
+                              <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" style="max-width: 200px; max-height: 200px;">
+                     
+                              {% else %}
 
-         <img src="{{ profile.background_banner.url }}" alt="Background Banner" style="max-width: 200px; max-height: 200px;">
+                              <i class="fas fa-fw fa-user position-absolute top-50 start-50 translate-middle text-secondary"></i>
+                              
+                              {% endif %}
+                           </div>
+									<!-- Button -->
+									<label for="profile_picture">Profile picture:</label>
+                           <input type="file" name="profile_picture">
+									<!-- Content -->
+									<p class="text-muted mt-3 mb-0"><span class="me-1">Note:</span>Minimum size 300px x 300px</p>
+								</div>
+							</div>
+						</div>
+					</div>
+                <!-- Upload banner -->
+					<div class="col-xxl-4">
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3">
+								<h4 class="mb-4 mt-0">Upload your background banner</h4>
+								<div class="text-center">
+									<!-- Image upload -->
 
-      {% endif %}
+									<div class="square position-relative display-2 mb-3">
+                              {% if profile.profile_picture %}
 
-      <br><br>
-    
-      <label for="profile_picture">Profile picture:</label>
-      <input type="file" name="profile_picture">
+                              <img src="{{ profile.background_banner.url }}" alt="Profile Picture" style="max-width: 300px; max-height: 200px;">
+                     
+                              {% else %}
 
-      {% if profile.profile_picture %}
+                              <i class="fas fa-fw fa-user position-absolute top-50 start-50 translate-middle text-secondary"></i>
+                              
+                              {% endif %}
+									</div>
+									<!-- Button -->
+                           
+									<label for="background_banner">Background banner:</label>
+                           <input type="file" name="background_banner" ><br><br>
+									<!-- Content -->
+									<p class="text-muted mt-3 mb-0"><span class="me-1">Note:</span>Minimum size 300px x 300px</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- Row END -->
+				</div> <!-- Row END -->
 
-         <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" style="max-width: 200px; max-height: 200px;">
 
-      {% endif %}
-    
-        
+           
+
+				<!-- Social media detail -->
+				<div class="row mb-5 gx-5">
+					<div class="col-xxl-6 mb-5 mb-xxl-0">
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3">
+								<h4 class="mb-4 mt-0">Social media detail</h4>
+								<!-- Facebook -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-facebook me-2 text-facebook"></i>Facebook *</label>
+									<input type="url" name="facebook" value="{{ profile.facebook }}" class="form-control" placeholder="">
+								</div>
+								<!-- Twitter -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-twitter text-twitter me-2"></i>Twitter *</label>
+                           <input type="url" name="twitter" value="{{ profile.twitter }}" class="form-control" placeholder="" >
+								</div>
+								<!-- Linkedin -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-linkedin-in text-linkedin me-2"></i>Linkedin *</label>
+									<input type="url" name="linkedin" value="{{ profile.linkedin }}" class="form-control" placeholder="" >
+								</div>
+								<!-- Instragram -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-instagram text-instagram me-2"></i>Instagram *</label>
+									<input type="url" name="instagram" value="{{ profile.instagram }}" class="form-control" placeholder="" >
+								</div>
+								<!-- TikTok -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fas fa-fw fa-tiktok text-tiktok" ></i>TikTok *</label>
+									<input type="url" name="tiktok" value="{{ profile.tiktok }}" class="form-control" placeholder="" >
+								</div>
+								<!-- PayPal -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-pinterest text-pinterest"></i>PayPal *</label>
+									<input type="url" name="paypal" value="{{ profile.paypal }}" class="form-control" placeholder="" >
+								</div>
+                        <!-- CashApp -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-cashapp text-cashapp"></i>CashApp *</label>
+									<input type="url" name="cashapp" value="{{ profile.cashapp }}" class="form-control" placeholder="" >
+								</div>
+                         <!-- SnapChat -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-snapchat text-snapchat"></i>SnapChat *</label>
+									<input type="url" name="snap" value="{{ profile.snap }}" class="form-control" placeholder="" >
+								</div>
+                         <!-- Discord -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-discord text-discord"></i>Discord *</label>
+									<input type="url" name="discord" value="{{ profile.discord }}" class="form-control" placeholder="" >
+								</div>
+                         <!-- Twitch -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-twitch text-twitch"></i>Twitch *</label>
+									<input type="url" name="twitch" value="{{ profile.twitch }}" class="form-control" placeholder="" >
+								</div>
+                         <!-- Spotify -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-spotify text-spotify"></i>Spotify *</label>
+                           <input type="url" name="spotify" value="{{ profile.spotify }}" class="form-control" placeholder="" >
+								</div>
+                         <!-- Apple -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-apple text-apple"></i>Apple Music *</label>
+									<input type="url" name="apple_music" value="{{ profile.apple_music }}" class="form-control" placeholder="" >
+								</div>
+                         <!-- Sound Cloud -->
+								<div class="col-md-6">
+									<label class="form-label"><i class="fab fa-fw fa-soundcloud text-soundcloud"></i>Sound Cloud *</label>
+									<input type="url" name="sound_cloud" value="{{ profile.sound_cloud }}" class="form-control" placeholder="" >
+								</div>
+                        
+							</div> <!-- Row END -->
+						</div>
+					</div>
+
+					<!-- change password -->
+					<div class="col-xxl-6">
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3">
+								<h4 class="my-4">Change Password</h4>
+								<!-- Old password -->
+								<div class="col-md-6">
+									<label for="exampleInputPassword1" class="form-label">Old password *</label>
+									<input type="password" class="form-control" id="exampleInputPassword1">
+								</div>
+								<!-- New password -->
+								<div class="col-md-6">
+									<label for="exampleInputPassword2" class="form-label">New password *</label>
+									<input type="password" class="form-control" id="exampleInputPassword2">
+								</div>
+								<!-- Confirm password -->
+								<div class="col-md-12">
+									<label for="exampleInputPassword3" class="form-label">Confirm Password *</label>
+									<input type="password" class="form-control" id="exampleInputPassword3">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- Row END -->
+				<!-- button -->
+				<div class="gap-3 d-md-flex justify-content-md-end text-center">
+					<button type="button" class="btn btn-danger btn-lg">Delete profile</button>
+					<button type="submit" value="Submit" class="btn btn-primary btn-lg">Update profile</button>
+				</div>
+			</form> <!-- Form END -->
+		</div>
+	</div>
+	</div>
+
+       
       <label for="background_color">Select Background Color:</label>
       <select name="background_color">
          <option value="" selected disabled>Select Color</option>
@@ -79,50 +260,7 @@
        
        <br><br><br>
                   
-      <!-- Social media fields -->
-      <label for="facebook">Facebook:</label>
-      <input type="url" name="facebook" value="{{ profile.facebook }}"><br><br>
-    
-      <label for="instagram">Instagram:</label>
-      <input type="url" name="instagram" value="{{ profile.instagram }}"><br><br>
-    
-      <label for="tiktok">TikTok:</label>
-      <input type="url" name="tiktok" value="{{ profile.tiktok }}"><br><br>
-    
-      <label for="twitter">Twitter:</label>
-      <input type="url" name="twitter" value="{{ profile.twitter }}"><br><br>
-    
-      <label for="linkedin">LinkedIn:</label>
-      <input type="url" name="linkedin" value="{{ profile.linkedin }}"><br><br>
-    
-      <!-- Payment fields -->
-      <label for="paypal">PayPal:</label>
-      <input type="url" name="paypal" value="{{ profile.paypal }}"><br><br>
-    
-      <label for="cashapp">CashApp:</label>
-      <input type="url" name="cashapp" value="{{ profile.cashapp }}"><br><br>
-    
-      <!-- Music fields -->
-      <label for="snap">Snapchat:</label>
-      <input type="url" name="snap" value="{{ profile.snap }}"><br><br>
-    
-      <label for="discord">Discord:</label>
-      <input type="url" name="discord" value="{{ profile.discord }}"><br><br>
-    
-      <label for="twitch">Twitch:</label>
-      <input type="url" name="twitch" value="{{ profile.twitch }}"><br><br>
-    
-      <label for="spotify">Spotify:</label>
-      <input type="url" name="spotify" value="{{ profile.spotify }}"><br><br>
-    
-      <label for="apple_music">Apple Music:</label>
-      <input type="url" name="apple_music" value="{{ profile.apple_music }}"><br><br>
-    
-      <label for="sound_cloud">SoundCloud:</label>
-      <input type="url" name="sound_cloud" value="{{ profile.sound_cloud }}"><br><br><br>
-
-      <button class="btn btn-primary" type="submit" value="Submit">Update Profile</button>
-
+      
       {% else %}
 
       <br><br><br>
@@ -135,6 +273,67 @@
    </form>
 </div>
 <br><br>
+
+<style>
+   body{margin-top:20px;
+color: #9b9ca1;
+}
+.bg-secondary-soft {
+    background-color: rgba(208, 212, 217, 0.1) !important;
+}
+.rounded {
+    border-radius: 5px !important;
+}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+.file-upload .square {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    vertical-align: middle;
+    border: 1px solid #e5dfe4;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: rgba(208, 212, 217, 0.5) !important;
+}
+.btn-success-soft {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+}
+.btn-danger-soft {
+    color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.1);
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #29292e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e5dfe4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+</style>
 
 
           
