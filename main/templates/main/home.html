@@ -6,7 +6,6 @@
 
 {% block content %}
 
-<link rel="stylesheet" href="">
 
 <!--Feature-->
 
@@ -76,70 +75,58 @@
     
     {% for post in object_list %}
 
-    <!--New Card-->
+  <!-- Profile Card-->
+  <h2 class="font-weight-bold mb-2">{{post.username}}</h2>
+  <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
 
-    <div class="container" style="margin-top:50px;">
-      <div class="row">
-          <div class="col-md-3">
-              <div class="card-sl">
-                  <div class="card-image">
-                    <a href="{% url 'profile' post.pk %}"><img
-                          src="{{post.profile_picture.url}}" /></a>
-                  </div>
-
-                  <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
-                  <div class="card-heading">
-                    <strong>{{post.business}}</strong>
-                  </div>
-                  <div class="card-text">
-                      Audi Q8 is a full-size luxury crossover SUV coupé made by Audi that was launched in 2018.
-                  </div>
-                  <div class="card-text">
-                    <div class="profile-icons"><a href="{{ post.facebook.url }}"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-                  </div>
-                  <a href="{% url 'profile' post.pk %}" class="card-button">{{post.username}}</a>
-              </div>
+  <div class="row pb-5 mb-4">
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+      <!-- Card-->
+      <div class="card shadow-sm border-0 rounded">
+        <div class="card-body p-0"><a href="{% url 'profile' post.pk %}"><img src="{{post.profile_picture.url}}" alt="" class="w-100 card-img-top"></a>
+          <div class="p-4">
+            <h5 class="mb-0">{{post.full_name}}</h5>
+            <p class="small text-muted">{{post.job_title}}</p>
+            <ul class="social mb-0 list-inline mt-3">
+              <li class="list-inline-item m-0"><a href="{{ post.facebook }}" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+              <li class="list-inline-item m-0"><a href="{{ post.twitter }}" class="social-link"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item m-0"><a href="{{ post.instagram }}" class="social-link"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item m-0"><a href="{{ post.linkedin }}" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
           </div>
-      </div>  
-              
-    <!--End New Card-->
-     
-    <br><br>
-
-     <!-- comment box -->
-     <form action="#" class="comment-area-box mb-3">
-      <span class="input-icon">
-        <input type="text" id="simpleinput" class="form-control border-0 form-control-sm" placeholder="Add comment">
-      </span>
-      <br>
-      <div class="comment-area-btn">
-          <div class="float-end">
-              <button type="submit" class="btn btn-sm btn-dark waves-effect waves-light">Post</button>
-          </div>
-          <div>
-              <a href="#" class="btn btn-sm btn-light text-black-50"><i class="fa fa-user"></i></a>
-              <a href="#" class="btn btn-sm btn-light text-black-50"><i class="fa fa-map-marker-alt"></i></a>
-              <a href="#" class="btn btn-sm btn-light text-black-50"><i class="fa fa-camera"></i></a>
-              <a href="#" class="btn btn-sm btn-light text-black-50"><i class="fa fa-smile"></i></a>
-          </div>
+        </div>
       </div>
-  </form>
-  <!-- end comment box -->
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+
+    <!--End Profile Card-->
+
+    
         
         
           
-        
-    
+        </div>
+    </div>
     
     <hr><br/>
     
     {% endfor %}
     
-  </div>   
-  
-  
+    </div>
+    
+    </div>
+    <!-- /.container -->
 
 
+
+   
+
+
+
+    <style>
+
+    </style>
     
     {% endblock  %}
 
