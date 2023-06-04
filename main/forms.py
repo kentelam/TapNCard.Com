@@ -4,8 +4,8 @@ from  members.models import Post
 
 class ContactForm(forms.Form):
     
-        name = forms.CharField()
-        message = forms.ChoiceField(widget=forms.Textarea)
+    name = forms.CharField()
+    message = forms.CharField(widget=forms.Textarea)
 
 
 

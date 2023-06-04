@@ -27,10 +27,10 @@
         <span>Website: {{post.website}}</span><br>
 
         <div class="intro">
-          <p>{{post.full_name}} is an enthusiastic and passionate storyteller. He loves to do different home-made things and share them with the world.</p>
+          <p>{{post.full_name}} is an enthusiastic and passionate storyteller. He loves to do different home-made things and share them with the world.</p><br>
 
-          <button class="btn btn-secondary"><a href="?download_vcard=True">Add Contact</a></button>
-          <button class="btn btn-secondary"><a href="{% url 'edit' post.pk %}">Edit</a></button>
+          <button class="msg-btn"><a href="?download_vcard=True">Add Contact</a></button>
+          <button class="follow-btn"><a href="{% url 'edit' post.pk %}">Edit</a></button>
                    
           <br><br>
           <a href="{% url 'home' %}">www.tapncard.com</a>
@@ -287,36 +287,32 @@ img{
  
 }
 button{
-  margin: 0px 0 0px 0;
-}
-#msg-btn, #follow-btn{
-  background: #1a1919;
-  border: 2px solid #878787;
-  padding: 14px 36px;
-  color: white;
-  border-radius: 4px;
-  font-family: Montserrat, sans-serif;
-  cursor: pointer;
-  text-decoration: none;
-}
-.msg-btn > a{
-  text-decoration: none;
-}
-.follow-btn > a{
-  text-decoration: none;
-}
-.follow-btn{
-  margin-left: 10px;
-  background: transparent;
-  color: white;
-  text-decoration: none;
-}
-.follow-btn:hover{
-  color: #231e39;
-  background: #03bfbc;
-  transition: .5s;
-}
+    margin: 0px 0 0px 0;
+  }
+  .msg-btn, .follow-btn{
+    background: #f1f1f1;
+    border: 2px solid #878787;
+    padding: 14px 36px;
+    color: #878787;
+    border-radius: 4px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+  }
+  .follow-btn{
+    margin-left: 10px;
+    background: transparent;
+    color: #878787;
+  }
+  .follow-btn:hover{
+    color: #231e39;
+    background: #878787;
+    transition: .5s;
+  }
 
+  .container i:hover{
+    color: #03bfbc;
+  }
+  
 
 .social-section {
     background-color: #f2f2f2;
@@ -347,6 +343,48 @@ button{
   
   .social-icon:hover {
     size: 80px;
+  }
+
+.social-list-item {
+    height: 2rem;
+    width: 2rem;
+    line-height: calc(2rem - 2px);
+    display: block;
+    border: 2px solid #adb5bd;
+    border-radius: 50%;
+    color: #adb5bd;
+}
+.social-icon ul {
+    list-style-type: none;
+}
+ .social-icon ul li {
+    display: inline-block;
+}
+ .social-icon ul li a {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  border:1px solid #ddd;
+  display: block;
+  border-radius: 50%;
+  transition: all 0.5s ease-out;
+ }
+ .social-icon ul{
+  margin:0;
+   padding:0;
+}
+ .social-icon ul li a:hover {
+  background-color: var(--dark);
+  border:1px solid var(--dark);
+ }
+  .social-icon ul li a i{
+   line-height: 35px;
+   color:#666;
+  }
+  .social-icon ul li a i:hover,
+    .social-icon ul li a:hover i{
+ 
+   color:var(--white);
   }
   
 
