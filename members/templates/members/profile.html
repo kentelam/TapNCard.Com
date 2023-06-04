@@ -29,8 +29,8 @@
         <div class="intro">
           <p>{{post.full_name}} is an enthusiastic and passionate storyteller. He loves to do different home-made things and share them with the world.</p>
 
-          <button id="msg-btn"><a href="?download_vcard=True">Add Contact</a></button>
-          <button id="follow-btn"><a href="{% url 'edit' post.pk %}">Edit</a></button>
+          <button class="btn btn-secondary"><a href="?download_vcard=True">Add Contact</a></button>
+          <button class="btn btn-secondary"><a href="{% url 'edit' post.pk %}">Edit</a></button>
                    
           <br><br>
           <a href="{% url 'home' %}">www.tapncard.com</a>
@@ -168,6 +168,13 @@
                 </div>
             </div>
 
+           
+
+        </div> <!-- end col -->
+    </div>
+    <!-- end row-->
+
+</div>
         <!--End Profile Dashboard-->
   <br>
   <br>
@@ -176,7 +183,7 @@
   <br>
   <br>
   <div id="qr">
-    <small>{{post.username}}<br> QR Code</small><br><br>
+    <small>Profile QR Code</small><br><br>
     <img src="{% url 'profile' post.pk %}?download_qrcode" alt="Profile QR Code">
 
     </div> 
@@ -186,7 +193,7 @@
   <br>
   <br>
   <br>
-  <!-- Bootstrap Core JavaScript -->
+  <!-- style -->
   
   <style>
 
@@ -220,7 +227,7 @@ img{
   width: 22.50em;
   height: auto;
   text-align: center;
-  margin: px auto;
+  margin: 0px auto;
   box-shadow:  0px 0px 18px #ccc;
   
 }
@@ -309,115 +316,46 @@ button{
   background: #03bfbc;
   transition: .5s;
 }
-body{
-  background-color:#ecf2f5;
- 
-}
-.card {
-  box-shadow: 0 0 2px 0 rgb(0 0 0 / 10%);
-  margin-bottom: 24px;
-}
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 0 solid #ecf2f5;
-  border-radius: .25rem;
-}
-.avatar-lg {
-  height: 4.5rem;
-  width: 4.5rem;
-}
-.rounded-circle {
-  border-radius: 50%!important;
-}
-.img-thumbnail {
-  padding: .25rem;
-  background-color: #ecf2f5;
-  border: 1px solid #dee2e6;
-  border-radius: .25rem;
-  max-width: 100%;
-  height: auto;
-}
-.avatar-sm {
-  height: 2.25rem;
-  width: 2.25rem;
-}
-.rounded-circle {
-  border-radius: 50%!important;
-}
-.me-2 {
-  margin-right: .75rem!important;
-}
-.avatar-md {
-  height: 3.5rem;
-  width: 3.5rem;
-}
-.rounded-circle {
-  border-radius: 50%!important;
-}
-.bg-transparent {
-  --bs-bg-opacity: 1;
-  background-color: transparent!important;
-}
-.post-user-comment-box {
-  background-color: #f2f8fb;
-  margin: 0 -.75rem;
-  padding: 1rem;
-  margin-top: 20px;
-}
-.simplebar-wrapper {
-  overflow: hidden;
-  width: inherit;
-  height: inherit;
-  max-width: inherit;
-  max-height: inherit;
-}
-.simplebar-height-auto-observer-wrapper {
-  box-sizing: inherit!important;
-  height: 100%;
-  width: 100%;
-  max-width: 1px;
-  position: relative;
-  float: left;
-  max-height: 1px;
-  overflow: hidden;
-  z-index: -1;
-  padding: 0;
-  margin: 0;
-  pointer-events: none;
-  flex-grow: inherit;
-  flex-shrink: 0;
-  flex-basis: 0;
-}
-.font-13 {
-  font-size: 13px!important;
-}
-.btn-soft-info {
-  color: #45bbe0;
-  background-color: rgba(69,187,224,.18);
-  border-color: rgba(69,187,224,.12);
-}
-.social-list-item {
-  height: 2rem;
-  width: 2rem;
-  line-height: calc(2rem - 2px);
-  display: block;
-  border: 2px solid #adb5bd;
-  border-radius: 50%;
-  color: #adb5bd;
-}
-.comment-area-box .comment-area-btn {
-  background-color: #f2f8fb;
-  padding: 10px;
-  border: 1px solid #dee2e6;
-  border-top: none;
-  border-radius: 0 0 .2rem .2rem;
-}
+
+
+.social-section {
+    background-color: #f2f2f2;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0;
+   
+  }
+
+  
+  .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 27em;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow:  0px 0px 18px #ccc;
+   
+  }
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    
+  }
+  
+  .social-icon:hover {
+    size: 80px;
+  }
+  
+
+
+
+
+
+
+
 #qr{
   
   height: 100px;
@@ -426,10 +364,6 @@ body{
   text-align: center;
 
 }
-
-
-
-
 
 
 
