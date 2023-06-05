@@ -112,18 +112,16 @@ class ProfileView(DetailView):
         response.write(stream.getvalue())
         return response
 
-    def get(self, request, *args, **kwargs):
-        self.object = self.get_object()
-        context = self.get_context_data(object=self.object)
+    def save(self, *args, **kwargs):
+        if not self.background_banner:
+            self.background_banner = 'cover_pics/images/profile/TapNCard_Default_Profile_Banner_syZWOI8.png'
         
-        if 'download_vcard' in request.GET:
-            return self.generate_vcard(context['post'])
+        if not self.profile_picture:
+            self.profile_picture = 'profile_pics/images/profile/TapNCard_Default_Profile_Pic_Xyd54GF.png'
         
-        if 'download_qrcode' in request.GET:
-            profile_url = request.build_absolute_uri(self.object.get_absolute_url())
-            return self.generate_qrcode(profile_url)
+        super().save(*args, **kwargs)
 
-        return self.render_to_response(context)
+
 
 
 #@login_required

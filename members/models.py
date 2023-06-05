@@ -2,16 +2,16 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 
+def get_default_profile_pic():
+    return 'profile_pics/images/profile/TapNCard_Default_Profile_Picture2.png'
+def get_default_cover_pic():
+    return 'cover_pics/images/profile/TapNCard_Default_Profile_Banner_syZWOI8.png'
+
 class Post(models.Model):
-    
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    
     username = models.CharField(max_length=50, blank=True, default='@')
-    
-    card_number = models.CharField(max_length=50, blank=True, default=14)
-    
-    background_banner = models.ImageField(null=True, blank=True, upload_to='images/profile')
-    
+    card_number = models.CharField(max_length=50, blank=True, default='14')
+    background_banner = models.ImageField(null=True, blank=True, upload_to='images/profile', default=get_default_cover_pic)
     COLOR_CHOICES = (
         ('--light', 'Light'),
         ('--white', 'White'),
@@ -19,70 +19,40 @@ class Post(models.Model):
         ('--purple', 'Purple'),
     )
     background_color = models.CharField(max_length=20, blank=True, null=True, choices=COLOR_CHOICES)
-    
-    profile_picture = models.ImageField(null=True, blank=True, upload_to='images/profile',)
-    
+    profile_picture = models.ImageField(null=True, blank=True, upload_to='images/profile', default=get_default_profile_pic)
     full_name = models.CharField(max_length=100, blank=False)
-    
     business = models.CharField(max_length=100, blank=False)
-    
     phone_number = models.CharField(max_length=20, blank=True)
-    
     email_address = models.EmailField(max_length=100, blank=True)
-    
     website = models.URLField(blank=True)
-    
     job_title = models.CharField(max_length=100, blank=True)
-    
+    about = models.CharField(max_length=300, blank=True)
     facebook = models.URLField(blank=False, default="http://www.facebook.com/")
-    
     instagram = models.URLField(blank=True, default="http://www.instagram.com/")
-    
     tiktok = models.URLField(blank=True, default="http://www.tiktok.com/")
-    
     twitter = models.URLField(blank=True, default="http://www.twitter.com/")
-    
     linkedin = models.URLField(blank=True, default="http://www.linkedin.com/")
-    
     paypal = models.URLField(blank=True, default="http://www.paypal.com/")
-    
     cashapp = models.URLField(blank=True, default="http://www.cashapp.com/")
-    
     snap = models.URLField(blank=True, default="http://www.snapchat.com/")
-    
     discord = models.URLField(blank=True, default="http://www.discord.com/")
-    
     twitch = models.URLField(blank=True, default="http://www.twitch.com/")
-    
     spotify = models.URLField(blank=True, default="http://www.spotify.com/")
-    
     apple_music = models.URLField(blank=True, default="http://www.applemusic.com/")
-    
     sound_cloud = models.URLField(blank=True, default="http://www.soundcloud.com/")
 
     def __str__(self):
-        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}, 's Profile"
+        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}'s Profile"
 
     def get_absolute_url(self):
         return reverse('profile', args=[str(self.pk)])
-    
 
     def save(self, *args, **kwargs):
-        if self.pk:
-            # Get the original instance from the database
-            original = Post.objects.get(pk=self.pk)
-
-            # Check if the profile picture field has changed and a new image is provided
-            if self.profile_picture != original.profile_picture and self.profile_picture:
-                original.profile_picture.delete()  # Delete the original image
-
-            # Check if the profile banner field has changed and a new image is provided
-            if self.background_banner != original.background_banner and self.background_banner:
-                original.background_banner.delete()  # Delete the original image
-
+        if not self.background_banner:
+            self.background_banner = 'cover_pics/images/profile/TapNCard_Default_Profile_Banner_syZWOI8.png'
+        
         super().save(*args, **kwargs)
-    
-    
+
     @property
     def generate_facebook_url(self):
         if self.facebook:
@@ -160,6 +130,4 @@ class Post(models.Model):
         if self.sound_cloud:
             return self.sound_cloud
         return f"www.soundcloud.com/{self.user.username}"
-
-
 

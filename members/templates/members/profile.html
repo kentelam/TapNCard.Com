@@ -27,7 +27,7 @@
         <span>Website: {{post.website}}</span><br>
 
         <div class="intro">
-          <p>{{post.full_name}} is an enthusiastic and passionate storyteller. He loves to do different home-made things and share them with the world.</p><br>
+          <p>{{post.about}}</p><br>
 
           <button class="msg-btn"><a href="?download_vcard=True">Add Contact</a></button>
           <button class="follow-btn"><a href="{% url 'edit' post.pk %}">Edit</a></button>
@@ -89,9 +89,9 @@
                     </div>
 
                     <div class="mt-3">
-                        <h4 class="font-13 text-uppercase">About Me :</h4>
+                        <h4 class="font-13 text-uppercase">About:</h4>
                         <p class="text-muted font-13 mb-3">
-                            Hi I'm Johnathn Deo,has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.
+                          {{post.about}}
                         </p>
                         <p class="text-muted mb-2 font-13"><strong>Full Name :</strong> <span class="ms-2">{{post.full_name}}</span></p>
                     
