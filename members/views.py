@@ -1,13 +1,13 @@
 from django.http import HttpResponse
 from django.shortcuts import render , redirect,get_object_or_404
+from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView
+from django.contrib.auth.forms import UserCreationForm
 from django.views import generic
-from .models import Post
+from .models import Post, PostImage
 import pyqrcode
 from io import BytesIO
 import os
-from django.contrib.auth.forms import UserCreationForm
-from django.urls import reverse_lazy
 
 # Create your views here.
 
@@ -21,7 +21,8 @@ class UserRegisterView(generic.CreateView):
 class ProfileView(DetailView):
 
     model = Post
-
+   
+    
     template_name = 'members/profile.html'
 
 
@@ -96,7 +97,7 @@ class ProfileView(DetailView):
     
 
 
-     # Create a function to generate a QRCode for a user
+    # Create a function to generate a QRCode for a user
     def generate_qrcode(self, url):
     # Generate the QR code with a smaller scale
         qr = pyqrcode.create(url)
@@ -112,96 +113,72 @@ class ProfileView(DetailView):
         response.write(stream.getvalue())
         return response
 
-    def save(self, *args, **kwargs):
-        if not self.background_banner:
-            self.background_banner = 'cover_pics/images/profile/TapNCard_Default_Profile_Banner_syZWOI8.png'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        post_image = PostImage.objects.get(user=self.object)
+        context['postimage'] = post_image
+        return context
+
+
+    def get(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        context = self.get_context_data(object=self.object)
         
-        if not self.profile_picture:
-            self.profile_picture = 'profile_pics/images/profile/TapNCard_Default_Profile_Pic_Xyd54GF.png'
+        if 'download_vcard' in request.GET:
+            return self.generate_vcard(context['post'])
         
-        super().save(*args, **kwargs)
+        if 'download_qrcode' in request.GET:
+            profile_url = request.build_absolute_uri(self.object.get_absolute_url())
+            return self.generate_qrcode(profile_url)
+
+        return self.render_to_response(context)
 
 
 
 
 #@login_required
-def profile_editor(request, pk):
 
-    
+def profile_editor(request, pk):
     # Get the UserProfile object for the given pk, or create a new one.
     profile = get_object_or_404(Post, pk=pk) if pk else Post()
 
+    # Get the associated PostImage object
+    post_image = PostImage.objects.get(user=profile)  # Assuming a one-to-one relationship between Post and PostImage
 
     if request.method == "POST":
-
         # Update the profile with the POST data.
-        profile.background_banner = request.FILES.get('background_banner')
-        
-        profile.background_color = request.POST.get('background_color')        
-        
-        profile.profile_picture = request.FILES.get('profile_picture')
         
         profile.full_name = request.POST.get("full_name")
-        
         profile.business = request.POST.get("business")
-        
         profile.phone_number = request.POST.get("phone_number")
-        
         profile.email_address = request.POST.get("email_address")
-        
         profile.website = request.POST.get("website")
-        
         profile.job_title = request.POST.get("job_title")
-        
         profile.facebook = request.POST.get("facebook")
-        
         profile.instagram = request.POST.get("instagram")
-        
         profile.tiktok = request.POST.get("tiktok")
-        
         profile.twitter = request.POST.get("twitter")
-        
         profile.linkedin = request.POST.get("linkedin")
-        
         profile.paypal = request.POST.get("paypal")
-        
         profile.cashapp = request.POST.get("cashapp")
-        
         profile.snap = request.POST.get("snap")
-        
         profile.discord = request.POST.get("discord")
-        
         profile.twitch = request.POST.get("twitch")
-        
         profile.spotify = request.POST.get("spotify")
-        
         profile.apple_music = request.POST.get("apple_music")
-        
         profile.sound_cloud = request.POST.get("sound_cloud")
 
+
+       # Handle profile picture upload
+        profile.profile_picture = request.FILES.get('profile_picture')
+
+        # Handle background banner upload
+        post_image.background_banner = request.FILES.get('background_banner')
+
+        # Save both the profile and post image
         profile.save()
-        
-        # Check if a new background color was submitted
-      
-        if profile.background_color:
-
-            # Get the path to the CSS file
-            css_file_path = os.path.join(os.path.dirname(__file__), 'static', 'css', 'profile.css')
-
-            # Open the CSS file and read its contents
-            with open(css_file_path, 'r') as css_file:
-                css_contents = css_file.read()
-
-            # Replace the current background color with the new one
-            new_css_contents = css_contents.replace('background-color: #333333;', f'background-color: {profile.background_color};')
-
-            # Write the updated CSS contents back to the file
-            with open(css_file_path, 'w') as css_file:
-                css_file.write(new_css_contents)
-        
+        post_image.save()
 
         return redirect('profile', pk=profile.pk)
 
-
-    return render(request, 'members/edit.html', {'profile': profile, 'background_color':profile.background_color})
-
+    return render(request, 'members/edit.html', {'profile': profile, 'postimage': post_image})

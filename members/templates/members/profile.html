@@ -11,14 +11,24 @@
   <div class="wrapper">
     <div class="profile-card">
       <div class="profile-header">
-        <img id="banner" src="{{post.background_banner.url}}" alt="">
-      </div>
+      {% if postimage %}
 
-      <div class="profile-body {% if post.background_color %}{{ post.background_color }}{% endif %}">
-        <div class="author-img">
-          <img src="{{post.profile_picture.url}}" alt="">
+        {% if postimage.background_banner %}
+
+          <img id="img" src="{{ postimage.background_banner.url }}" alt="Profile Banner">           
         </div>
+          {% endif %}
 
+        <div class="profile-body ">
+        <div class="author-img">
+
+        {% if postimage.profile_picture %}
+
+          <img src="{{ postimage.profile_picture.url }}" alt="Profile Picture">        
+        </div>
+          {% endif %}
+
+      {% endif %}
         <div class="name">{{post.full_name}}</div>
         <h6>{{post.business}}</h6>
         <span>{{post.job_title}}</span><br>
@@ -26,7 +36,7 @@
         <span>Email: {{post.email_address}}</span><br>
         <span>Website: {{post.website}}</span><br>
 
-        <div class="intro">
+        <div name="about" class="intro">
           <p>{{post.about}}</p><br>
 
           <button class="msg-btn"><a href="?download_vcard=True">Add Contact</a></button>
@@ -57,7 +67,7 @@
     
 
         
-        <!--Profile Dashboard-->
+<!--Profile Dashboard-->
 
 
 <div class="container">
@@ -79,7 +89,7 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-start">
-                        <img src="{{post.profile_picture.url}}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 70px; height: 60px;">
+                        <img src="{{ postimage.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 70px; height: 60px;">
                         <div class="w-100 ms-3">
                             <h4 class="my-0">Social Media Hub</h4>
                             <p class="text-muted">{{post.username}}</p>
@@ -183,7 +193,7 @@
   <br>
   <br>
   <div id="qr">
-    <small>Profile QR Code</small><br><br>
+    <small>{{post.username}}<br/> QR Code</small><br><br>
     <img src="{% url 'profile' post.pk %}?download_qrcode" alt="Profile QR Code">
 
     </div> 
@@ -208,13 +218,13 @@ body{
   padding: 0;
   margin: 0;
 }
-img{
+#img{
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 #banner{
   width: 100%;
-  height: 300px;
+  height: 100px;
 }
 .wrapper{
   width: 100%;
@@ -240,21 +250,7 @@ img{
   padding: 10px 40px 40px 40px;
  
 }
-.profile-card .profile-body.--light {
-  background-color: var(--light);
-}
 
-.profile-card .profile-body.--white {
-  background-color: var(--white);
-}
-
-.profile-card .profile-body.--dark {
-  background-color: var(--dark);
-}
-
-.profile-card .profile-body.--purple {
-  background-color: var(--purple);
-}
 .profile-card .profile-body .author-img{
   margin-top: -22px;
   margin-bottom: 0px;

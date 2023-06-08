@@ -2,24 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 
-def get_default_profile_pic():
-    return 'profile_pics/images/profile/TapNCard_Default_Profile_Picture2.png'
-def get_default_cover_pic():
-    return 'cover_pics/images/profile/TapNCard_Default_Profile_Banner_syZWOI8.png'
+
 
 class Post(models.Model):
+
     user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+  
     username = models.CharField(max_length=50, blank=True, default='@')
-    card_number = models.CharField(max_length=50, blank=True, default='14')
-    background_banner = models.ImageField(null=True, blank=True, upload_to='images/profile', default=get_default_cover_pic)
-    COLOR_CHOICES = (
-        ('--light', 'Light'),
-        ('--white', 'White'),
-        ('--dark', 'Dark'),
-        ('--purple', 'Purple'),
-    )
-    background_color = models.CharField(max_length=20, blank=True, null=True, choices=COLOR_CHOICES)
-    profile_picture = models.ImageField(null=True, blank=True, upload_to='images/profile', default=get_default_profile_pic)
     full_name = models.CharField(max_length=100, blank=False)
     business = models.CharField(max_length=100, blank=False)
     phone_number = models.CharField(max_length=20, blank=True)
@@ -42,17 +32,12 @@ class Post(models.Model):
     sound_cloud = models.URLField(blank=True, default="http://www.soundcloud.com/")
 
     def __str__(self):
-        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}'s Profile"
+        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}, {self.about}"
 
     def get_absolute_url(self):
         return reverse('profile', args=[str(self.pk)])
 
-    def save(self, *args, **kwargs):
-        if not self.background_banner:
-            self.background_banner = 'cover_pics/images/profile/TapNCard_Default_Profile_Banner_syZWOI8.png'
-        
-        super().save(*args, **kwargs)
-
+    
     @property
     def generate_facebook_url(self):
         if self.facebook:
@@ -130,4 +115,18 @@ class Post(models.Model):
         if self.sound_cloud:
             return self.sound_cloud
         return f"www.soundcloud.com/{self.user.username}"
+    
+
+
+class PostImage(models.Model):
+
+    user = models.OneToOneField(Post, on_delete=models.CASCADE)
+
+
+    profile_picture = models.ImageField( upload_to='images/profile',null=True ,blank=True, default='media/images/profile/defaultBizman_5lfB6OA.jpg')
+    background_banner = models.ImageField( upload_to='images/profile',null=True, blank=True, default='media/images/profile/TapNCard_Default_Profile_Banner_zZkKI0A.png')
+
+    def __str__(self):
+        return f"{self.profile_picture}, {self.background_banner}"
+
 

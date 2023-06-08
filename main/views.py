@@ -2,8 +2,8 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect,get_object_or_404
 from django.views.generic import ListView, DetailView, FormView, TemplateView, CreateView, UpdateView
 from django.contrib.auth.decorators import login_required
-from members.models import Post
-from .forms import ContactForm, PostForm
+from members.models import Post,  PostImage
+from .forms import ContactForm
 import nfc
 import pyqrcode
 from io import BytesIO
@@ -17,13 +17,9 @@ import os
 
 
 class HomeView(ListView):
-
     model = Post
-
     template_name = 'main/home.html'
-
     context_object_name = 'posts'
-    
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -31,9 +27,13 @@ class HomeView(ListView):
         # Retrieve the post object based on your logic
         post = Post.objects.first()  # Replace this with your actual logic
         
+        # Get the associated PostImage object
+        post_image = PostImage.objects.get(user=post)  # Assuming a one-to-one relationship between Post and PostImage
+        
         context['post'] = post
+        context['postimage'] = post_image
+        
         return context
-
 
 def search_view(request):
 
