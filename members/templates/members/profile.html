@@ -35,10 +35,10 @@
         <span>Phone: {{post.phone_number}}</span><br>
         <span>Email: {{post.email_address}}</span><br>
         <span>Website: {{post.website}}</span><br>
+        <span>About: {{ post.about }}</span><br>
 
         <div name="about" class="intro">
-          <p>{{post.about}}</p><br>
-
+         
           <button class="msg-btn"><a href="?download_vcard=True">Add Contact</a></button>
           <button class="follow-btn"><a href="{% url 'edit' post.pk %}">Edit</a></button>
                    
@@ -220,7 +220,7 @@ body{
 }
 #img{
   width: 100%;
-  height: 300px;
+  height: 290px;
 }
 #banner{
   width: 100%;
@@ -243,7 +243,7 @@ body{
 }
 
 .profile-card .profile-header{
-  height: 180px;
+  height: 160px;
 }
 .profile-card .profile-body{
   background-color: var(--white);

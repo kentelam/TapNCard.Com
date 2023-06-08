@@ -182,3 +182,15 @@ def profile_editor(request, pk):
         return redirect('profile', pk=profile.pk)
 
     return render(request, 'members/edit.html', {'profile': profile, 'postimage': post_image})
+
+
+
+
+
+def pet_profile(request):
+
+        return render(request, 'members/petprofile.html', {
+
+            #'searched': searched,
+            #'profile':profile,
+        })

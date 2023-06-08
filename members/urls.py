@@ -16,6 +16,7 @@ path('profile/<int:pk>/', ProfileView.as_view(), name='profile'),
 path('profile/<int:pk>/edit/', views.profile_editor, name='edit'),
 
 
+path('petprofile/', views.pet_profile, name='pets'),
 
     
     

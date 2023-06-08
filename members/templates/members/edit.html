@@ -82,7 +82,7 @@
                 <!-- Profile Image upload -->
                 <div class="square position-relative display-2 mb-3">
                     {% if postimage.profile_picture %}
-                        <img src="{{ postimage.profile_picture.url }}" alt="Profile Picture" style="max-width: 200px; max-height: 200px;">
+                        <img src="{{ postimage.profile_picture.url }}" alt="Profile Picture" style="max-width: 300px; max-height: 250px;">
                     {% else %}
                         <i class="fas fa-fw fa-user position-absolute top-50 start-50 translate-middle text-secondary"></i>
                     {% endif %}
@@ -108,7 +108,7 @@
                 <!-- Image upload -->
                 <div class="square position-relative display-2 mb-3">
                     {% if postimage.background_banner %}
-                    <img src="{{ postimage.background_banner.url }}" alt="Background Banner" style="max-width: 300px; max-height: 200px;">
+                    <img src="{{ postimage.background_banner.url }}" alt="Background Banner" style="max-width: 250px; max-height: 300px;">
                     {% else %}
                         <i class="fas fa-fw fa-image position-absolute top-50 start-50 translate-middle text-secondary"></i>
                     {% endif %}
