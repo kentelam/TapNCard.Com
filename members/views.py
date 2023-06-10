@@ -4,7 +4,8 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView
 from django.contrib.auth.forms import UserCreationForm
 from django.views import generic
-from .models import Post, PostImage
+from .models import Post
+from .forms import PostForm
 import pyqrcode
 from io import BytesIO
 import os
@@ -113,12 +114,7 @@ class ProfileView(DetailView):
         response.write(stream.getvalue())
         return response
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        post_image = PostImage.objects.get(user=self.object)
-        context['postimage'] = post_image
-        return context
-
+   
 
     def get(self, request, *args, **kwargs):
         self.object = self.get_object()
@@ -139,49 +135,27 @@ class ProfileView(DetailView):
 #@login_required
 
 def profile_editor(request, pk):
-    # Get the UserProfile object for the given pk, or create a new one.
-    profile = get_object_or_404(Post, pk=pk) if pk else Post()
 
-    # Get the associated PostImage object
-    post_image = PostImage.objects.get(user=profile)  # Assuming a one-to-one relationship between Post and PostImage
+    # Get the UserProfile object for the given pk, or create a new one.
+    post = get_object_or_404(Post, pk=pk) if pk else Post()
+
+    form = PostForm(request.POST or None, instance=post)
+    
+    # Get the associated Post object
 
     if request.method == "POST":
         # Update the profile with the POST data.
         
-        profile.full_name = request.POST.get("full_name")
-        profile.business = request.POST.get("business")
-        profile.phone_number = request.POST.get("phone_number")
-        profile.email_address = request.POST.get("email_address")
-        profile.website = request.POST.get("website")
-        profile.job_title = request.POST.get("job_title")
-        profile.facebook = request.POST.get("facebook")
-        profile.instagram = request.POST.get("instagram")
-        profile.tiktok = request.POST.get("tiktok")
-        profile.twitter = request.POST.get("twitter")
-        profile.linkedin = request.POST.get("linkedin")
-        profile.paypal = request.POST.get("paypal")
-        profile.cashapp = request.POST.get("cashapp")
-        profile.snap = request.POST.get("snap")
-        profile.discord = request.POST.get("discord")
-        profile.twitch = request.POST.get("twitch")
-        profile.spotify = request.POST.get("spotify")
-        profile.apple_music = request.POST.get("apple_music")
-        profile.sound_cloud = request.POST.get("sound_cloud")
+        form = PostForm(request.POST, request.FILES or None, instance=post)
 
+        if form.is_valid():
 
-       # Handle profile picture upload
-        profile.profile_picture = request.FILES.get('profile_picture')
+            # Save both the profile and post image
+            form.save()
+        
+            return redirect('profile', pk=post.pk)
 
-        # Handle background banner upload
-        post_image.background_banner = request.FILES.get('background_banner')
-
-        # Save both the profile and post image
-        profile.save()
-        post_image.save()
-
-        return redirect('profile', pk=profile.pk)
-
-    return render(request, 'members/edit.html', {'profile': profile, 'postimage': post_image})
+    return render(request, 'members/edit.html', {'post': post, 'form':form})
 
 
 

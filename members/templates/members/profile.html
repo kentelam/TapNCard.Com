@@ -11,24 +11,22 @@
   <div class="wrapper">
     <div class="profile-card">
       <div class="profile-header">
-      {% if postimage %}
+      
 
-        {% if postimage.background_banner %}
-
-          <img id="img" src="{{ postimage.background_banner.url }}" alt="Profile Banner">           
+          <img id="img" src="{{ post.background_banner.url }}" alt="Profile Banner">           
         </div>
-          {% endif %}
+         
 
         <div class="profile-body ">
         <div class="author-img">
 
-        {% if postimage.profile_picture %}
+        
 
-          <img src="{{ postimage.profile_picture.url }}" alt="Profile Picture">        
+          <img src="{{ post.profile_picture.url }}" alt="Profile Picture">        
         </div>
-          {% endif %}
+         
 
-      {% endif %}
+     
         <div class="name">{{post.full_name}}</div>
         <h6>{{post.business}}</h6>
         <span>{{post.job_title}}</span><br>
@@ -89,7 +87,7 @@
                         </div>
                     </div>
                     <div class="d-flex align-items-start">
-                        <img src="{{ postimage.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 70px; height: 60px;">
+                        <img src="{{ post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 70px; height: 60px;">
                         <div class="w-100 ms-3">
                             <h4 class="my-0">Social Media Hub</h4>
                             <p class="text-muted">{{post.username}}</p>

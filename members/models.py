@@ -8,31 +8,33 @@ class Post(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-  
+
     username = models.CharField(max_length=50, blank=True, default='@')
     full_name = models.CharField(max_length=100, blank=False)
+    profile_picture = models.ImageField( upload_to='images/profile',null=False ,blank=False, default='media/images/profile/defaultBizman_5lfB6OA.jpg')
     business = models.CharField(max_length=100, blank=False)
     phone_number = models.CharField(max_length=20, blank=True)
     email_address = models.EmailField(max_length=100, blank=True)
     website = models.URLField(blank=True)
     job_title = models.CharField(max_length=100, blank=True)
     about = models.CharField(max_length=300, blank=True)
-    facebook = models.URLField(blank=False, default="http://www.facebook.com/")
-    instagram = models.URLField(blank=True, default="http://www.instagram.com/")
-    tiktok = models.URLField(blank=True, default="http://www.tiktok.com/")
-    twitter = models.URLField(blank=True, default="http://www.twitter.com/")
-    linkedin = models.URLField(blank=True, default="http://www.linkedin.com/")
-    paypal = models.URLField(blank=True, default="http://www.paypal.com/")
-    cashapp = models.URLField(blank=True, default="http://www.cashapp.com/")
-    snap = models.URLField(blank=True, default="http://www.snapchat.com/")
-    discord = models.URLField(blank=True, default="http://www.discord.com/")
-    twitch = models.URLField(blank=True, default="http://www.twitch.com/")
-    spotify = models.URLField(blank=True, default="http://www.spotify.com/")
-    apple_music = models.URLField(blank=True, default="http://www.applemusic.com/")
-    sound_cloud = models.URLField(blank=True, default="http://www.soundcloud.com/")
+    background_banner = models.ImageField( upload_to='images/profile',null=False, blank=False, default='media/images/profile/TapNCard_Default_Profile_Banner_zZkKI0A.png')
+    facebook = models.URLField(blank=False, default="http://www.facebook.com/username")
+    instagram = models.URLField(blank=True, default="http://www.instagram.com/username")
+    tiktok = models.URLField(blank=True, default="http://www.tiktok.com/username")
+    twitter = models.URLField(blank=True, default="http://www.twitter.com/username")
+    linkedin = models.URLField(blank=True, default="http://www.linkedin.com/username")
+    paypal = models.URLField(blank=True, default="http://www.paypal.com/username")
+    cashapp = models.URLField(blank=True, default="http://www.cashapp.com/username")
+    snap = models.URLField(blank=True, default="http://www.snapchat.com/username")
+    discord = models.URLField(blank=True, default="http://www.discord.com/username")
+    twitch = models.URLField(blank=True, default="http://www.twitch.com/username")
+    spotify = models.URLField(blank=True, default="http://www.spotify.com/username")
+    apple_music = models.URLField(blank=True, default="http://www.applemusic.com/username")
+    sound_cloud = models.URLField(blank=True, default="http://www.soundcloud.com/username")
 
     def __str__(self):
-        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}, {self.about}"
+        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}, {self.about}, {self.profile_picture}, {self.background_banner}, {self.discord}, {self.p}"
 
     def get_absolute_url(self):
         return reverse('profile', args=[str(self.pk)])
@@ -118,15 +120,8 @@ class Post(models.Model):
     
 
 
-class PostImage(models.Model):
-
-    user = models.OneToOneField(Post, on_delete=models.CASCADE)
 
 
-    profile_picture = models.ImageField( upload_to='images/profile',null=True ,blank=True, default='media/images/profile/defaultBizman_5lfB6OA.jpg')
-    background_banner = models.ImageField( upload_to='images/profile',null=True, blank=True, default='media/images/profile/TapNCard_Default_Profile_Banner_zZkKI0A.png')
 
-    def __str__(self):
-        return f"{self.profile_picture}, {self.background_banner}"
-
+  
 

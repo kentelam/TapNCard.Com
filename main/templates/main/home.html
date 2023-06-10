@@ -29,8 +29,8 @@
        <h5 class="card-title">Smart Contact Technology</h5>
        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
       <br>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-       <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+       <a href="" class="btn btn-outline-secondary">Read More</a>
+      
      </div>
     </div>
    </div>
@@ -41,8 +41,8 @@
        <h5 class="card-title">Free Online Profile</h5>
        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
        <br>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-       <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+       <a href="" class="btn btn-outline-secondary">Read More</a>
+       <a href="" class="btn btn-outline-danger btn-sm"><i class="fa fa-heart"></i></a>
      </div>
      </div>
    </div>
@@ -53,8 +53,8 @@
        <h5 class="card-title">Stylish Designs</h5>
        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
        <br>
-       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
-       <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+       <a href="" class="btn btn-outline-secondary">Read More</a>
+       <a href="" class="btn btn-outline-danger btn-sm"><i class="fa fa-heart"></i></a>
      </div>
     </div>
    </div>
@@ -85,7 +85,7 @@
       <!-- Card-->
        
       <div class="card shadow-sm border-0 rounded">                     
-        <div class="card-body p-0"><a href="{% url 'profile' post.pk %}"><img src="{{ post.postimage.profile_picture.url }}" alt="" class="w-100 card-img-top"></a>
+        <div class="card-body p-0"><a href="{% url 'profile' post.pk %}"><img src="{{ post.profile_picture.url }}" alt="" class="w-100 card-img-top"></a>
           <div class="p-4">                                            
             <h5 class="mb-0">{{post.business}}</h5>
             <p class="small text-muted">{{post.job_title}}</p>
