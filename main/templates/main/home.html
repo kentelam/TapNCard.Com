@@ -86,8 +86,8 @@
     
   {% for post in posts %}
         
-        <div class="container" style="max-width: 540px;">
-          <h2 class="font-weight-bold mb-2">{{post.username}}</h2>
+        <div class="container-sm" style="max-width: 540px;">
+          <a href="{% url 'profile' post.pk %}" style="text-decoration: none;"><h3 class="font-weight-bold mb-2">{{post.username}}</h3></a>
         <p class="font-italic text-muted mb-4">{{ post.about }}</p>                     
         <div class="card "><a href="{% url 'profile' post.pk %}"><img src="{{ post.profile_picture.url }}" alt="" class="w-100 card-img-top"></a>
           <div class="p-4">                                            
