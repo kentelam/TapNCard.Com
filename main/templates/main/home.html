@@ -13,7 +13,15 @@
 <section id="header" class="jumbotron text-center">
     <br><br>
     <h3 class="display-3">Welcome</h3>
+
+    {% if user.is_authenticated %}
+        {% if post.pk %}     
+          <p class="lead">{{ post.username }}</p>
+          <p class="lead">{{ post.business }}</p>
+    {% else %}
     <p class="lead">Smart Technology Solutions</p>
+        {% endif %}
+    {% endif %}
        
     
 </section>

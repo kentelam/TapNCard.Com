@@ -1,28 +1,35 @@
 {% extends 'base.html' %}
 
+{% block content %}
 
-   {% block content %}
-
-
+	{% if user.is_authenticated %}
    	  
 
-<div class="container">
+		<div class="container">
 
-			<!-- Page title -->
-			
-				<h3>Profile Editor</h3>
-				<hr>
-			
+					<!-- Page title -->
+					
+						<h3>Profile Editor</h3>
+						<hr>
+					
 
-			<!-- Form START -->
+					<!-- Form START -->
 
-				<form method= POST  enctype="multipart/form-data" class="file-upload">
-            	{% csrf_token %}
-				{{ form.as_p }}<br>
-				<button type="submit" value="submit" class="btn btn-secondary btn-lg">Update profile</button>
+						<form method= POST  enctype="multipart/form-data" class="file-upload">
+						{% csrf_token %}
+						{{ form.as_p }}<br>
+						<button type="submit" value="submit" class="btn btn-secondary btn-lg">Update profile</button>
 
 </div>
-<br><br>			
-   {% endblock %}
+
+	{% else %}
+	<div class="container">
+		<br><br><br>
+		<h1>You are not allowed here! Please sign in to edit your account.</h1>
+		<br><br><br>
+	</div>
+	{% endif %}			
+
+{% endblock %}
 
   

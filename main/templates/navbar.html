@@ -7,7 +7,19 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'main/images/TapN Blue & White(1).png' %}" style="height: fit-content;" width="fit-content"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            {{ post.pk}}<img src="{{ post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">
+            {% if user.is_authenticated %}
+
+                {% if post.pk %}
+
+                {{ post.pk}}<img src="{{ post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
+          
+                {% else %}
+         
+                {% endif %}
+
+          {% endif %}
+            
+            
 
             <span class="navbar-toggler-icon"></span>
           </button>
