@@ -57,35 +57,33 @@
        <a href="" class="btn btn-outline-danger btn-sm"><i class="fa fa-heart"></i></a>
      </div>
     </div>
+    
    </div>
+   
  </div>
-</div>
-</section>
+ <!---->
 
+ <div class="container">
 
-<!--End Feature-->
-<br><br><br>
-
-
-
-<div class="container">
-
-    <h1>Post</h1>
-    <br><br><br>
+  <h1>Post</h1>
+  <br><br><br>
     
     
   {% for post in posts %}
      
   <!-- Profile Card-->
+
+
   <h2 class="font-weight-bold mb-2">{{post.username}}</h2>
   <p class="font-italic text-muted mb-4">{{ post.about }}</p>
 
-  <div class="row pb-5 mb-4">
-    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+</div>
+
+
       <!-- Card-->
        
-      <div class="card shadow-sm border-0 rounded">                     
-        <div class="card-body p-0"><a href="{% url 'profile' post.pk %}"><img src="{{ post.profile_picture.url }}" alt="" class="w-100 card-img-top"></a>
+      <div class="container">                     
+        <div class="card "><a href="{% url 'profile' post.pk %}"><img src="{{ post.profile_picture.url }}" alt="" class="w-100 card-img-top"></a>
           <div class="p-4">                                            
             <h5 class="mb-0">{{post.business}}</h5>
             <p class="small text-muted">{{post.job_title}}</p>
@@ -100,24 +98,28 @@
       </div>
     </div>
 
+    <br><br><hr> 
+
     {% endfor %}
 
   <!--End Profile Card-->
-
-    <br><hr>  
-    
-    
-      
-    
-
-
-
-   
-
-    </div>
-
-        
-  </div>  
+     
+ 
   {% endblock  %}
+
+
+ <!---->
+</div>
+</section>
+
+
+
+<br><br><br>
+
+
+
+
+
+
 
     
