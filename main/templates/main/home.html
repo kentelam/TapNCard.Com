@@ -81,12 +81,12 @@
   <div class="container-fluid">
 
   <h1>Post</h1>
-  <br><br>
+  <hr/>
     
     
   {% for post in posts %}
         
-        <div class="container-sm" style="max-width: 540px;">
+        <div class="container-sm" style="max-width: 540px; max-height: 100%vh;">
           <a href="{% url 'profile' post.pk %}" style="text-decoration: none;"><h3 class="font-weight-bold mb-2">{{post.username}}</h3></a>
         <p class="font-italic text-muted mb-4">{{ post.about }}</p>                     
         <div class="card "><a href="{% url 'profile' post.pk %}"><img src="{{ post.profile_picture.url }}" alt="" class="w-100 card-img-top"></a>
