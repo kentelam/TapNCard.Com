@@ -34,7 +34,7 @@ class Post(models.Model):
     sound_cloud = models.URLField(blank=True, default="http://www.soundcloud.com/username")
 
     def __str__(self):
-        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}, {self.about}, {self.profile_picture}, {self.background_banner}, {self.discord}, {self.p}"
+        return f"{self.user.username}, {self.full_name}, {self.business}, {self.phone_number}, {self.email_address}, {self.website}, {self.job_title}, {self.about}, {self.profile_picture}, {self.background_banner}, {self.discord}"
 
     def get_absolute_url(self):
         return reverse('profile', args=[str(self.pk)])
