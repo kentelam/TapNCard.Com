@@ -13,11 +13,11 @@
 
                 {% if post.pk %}
 
-                <img src="{% static 'main/images/defautlProfile2.png' %}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
+                <img src="{{ user.post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
           
                 {% else %}
                 <!--Default User Image-->
-                <img src="{{ }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
+                
                 {% endif %}
 
           {% endif %}
