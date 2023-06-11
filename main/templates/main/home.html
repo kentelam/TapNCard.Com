@@ -15,9 +15,9 @@
     <h3 class="display-3">Welcome</h3>
 
     {% if user.is_authenticated %}
-        {% if post.pk %}     
-          <p class="lead">{{ post.username }}</p>
-          <p class="lead">{{ post.business }}</p>
+        {% if user.pk %}     
+          <p class="lead">{{ user.post.username }}</p>
+          <p class="lead">{{ user.post.business }}</p>
         {% endif %}
     {% else %}
         <p class="lead">Smart Technology Solutions</p>

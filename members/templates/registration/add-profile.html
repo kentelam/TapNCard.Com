@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% include "navbar.html"%}
+
+{% block content %}
+
+
+	{% if user.is_authenticated %}
+   	  
+
+		<div class="container">
+
+					<!-- Page title -->
+					<br>
+						<h3>Create Profile</h3>
+						<hr>
+					
+
+					<!-- Form START -->
+
+						<form class="form-group" method= POST  enctype="multipart/form-data" class="file-upload">
+						{% csrf_token %}
+						{{ form.as_p }}<br>
+						<button type="submit" value="submit" class="btn btn-secondary btn-lg">Create Profile</button>
+
+</div>
+
+	{% else %}
+	<div class="container">
+		<br><br><br>
+		<h1>You are not allowed here! Please sign in to edit your account.</h1>
+		<br><br><br>
+	</div>
+	{% endif %}
+	<br><br>			
+
+{% endblock %}
+
+

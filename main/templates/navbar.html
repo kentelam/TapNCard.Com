@@ -13,7 +13,7 @@
 
                 {% if post.pk %}
 
-                {{ post.pk}}<img src="{{ post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
+                {{ user.id}}<img src="{{ user.post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
           
                 {% else %}
          
@@ -51,7 +51,7 @@
 
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'login' %}">Sign in</a>
-              </li>              
+              </li>
               {% if user.is_authenticated %}
 
                     {% if post.pk %}
@@ -65,9 +65,21 @@
 
                             <li><hr class="dropdown-divider"></li>
 
-                                                  
+                                       
+                            {% if user.post.pk %}
 
-                            <li><a class="dropdown-item" href="{% url 'profile' user.id %}">View Profile</a></li>
+                            <li><a class="dropdown-item" href="{% url 'profile' user.post.pk %}">View Profile</a></li>
+
+                            {% else %}
+
+                            <li class="dropdown-item"><a class="nav-link" href="{% url 'create-profile' user.id %}">Create Profile</a></li> 
+
+                            {% endif %}
+
+                            <li><hr class="dropdown-divider"></li>
+
+                            <li class="dropdown-item"><a class="nav-link" href="{% url 'create-profile' user.id %}">Create Profile</a></li>              
+
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="{% url 'pets'  %}">Pet Profile</a></li>
                           </li>
@@ -86,6 +98,17 @@
               <input name="searched" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
+            {% if user.is_authenticated %}
+
+                {% if post.pk %}
+
+                <small>{{ user.post.user}} </small><img src="{{ user.post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
+          
+                {% else %}
+         
+                {% endif %}
+
+          {% endif %}
           </div>
         </div>
       </nav>

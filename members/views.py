@@ -1,11 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render , redirect,get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from django.contrib.auth.forms import UserCreationForm
 from django.views import generic
-from .models import Post
-from .forms import PostForm
+from .models import Post, Profile
+from .forms import PostForm, AddProfileForm
 import pyqrcode
 from io import BytesIO
 import os
@@ -16,6 +16,21 @@ class UserRegisterView(generic.CreateView):
     form_class = UserCreationForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
+
+
+class AddProfileView(CreateView):
+
+    model = Post
+
+    #fields = '__all__'
+
+    form_class = AddProfileForm
+
+    template_name = 'registration/add-profile.html'
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
 
 
 
