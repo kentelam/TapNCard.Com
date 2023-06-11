@@ -11,12 +11,15 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             {% if user.is_authenticated %}
 
-                {% if post.pk %}
+                {% if user.post.pk %}
 
                 <img src="{{ user.post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
           
                 {% else %}
                 <!--Default User Image-->
+                <img src="{% static 'main/images/defautlProfile2.png' %}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;">     
+
+
                 
                 {% endif %}
 
