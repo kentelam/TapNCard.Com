@@ -101,11 +101,12 @@
             </form>
             {% if user.is_authenticated %}
 
-                {% if post.pk %}
+                {% if user.post.pk %}
 
+                  <a href="{% url 'profile' user.post.pk %}"><span style="padding: 0px 10px 0px 10px;">{{ user.post.username}}</span><img src="{{ user.post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;"></a>     
           
                 {% else %}
-         
+                  <a href="{% url 'create-profile' user.pk %}">Create Profile</a>
                 {% endif %}
 
           {% endif %}
