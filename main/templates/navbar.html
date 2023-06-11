@@ -1,7 +1,6 @@
 
 {% load static %}
- <!-- Bootstrap CSS -->
-
+ 
 
        <!-- Navigation -->
     
@@ -52,29 +51,36 @@
 
               <li class="nav-item">
                 <a class="nav-link" href="{% url 'login' %}">Sign in</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'pets' %}">Pet Profiles</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Members
-                </a>
-                <ul class="dropdown-menu">
+              </li>              
+              {% if user.is_authenticated %}
 
-                  <li><a class="dropdown-item" href="{% url 'logout' %}">Log out</a></li>
+                    {% if post.pk %}
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Members
+                          </a>
+                          <ul class="dropdown-menu">
 
-                  <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{% url 'logout' %}">Log out</a></li>
 
-                                          {% if user.is_authenticated %}
+                            <li><hr class="dropdown-divider"></li>
 
-                  <li><a class="dropdown-item" href="{% url 'profile' user.id %}">Profile</a></li>
+                                                  
 
-                                          {% endif %}
-                </ul>
-              </li>
-              
-            </ul>
+                            <li><a class="dropdown-item" href="{% url 'profile' user.id %}">View Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{% url 'pets'  %}">Pet Profile</a></li>
+                          </li>
+                    {% else %}
+
+                            <li><a class="dropdown-item" href="{% url 'login' %}">Sign in</a></li>
+                            
+                    {% endif %}
+              {% endif %}
+                      </ul>
+                    </li>
+                    
+                  </ul>
             <form method="POST" action="{% url 'search' %}" class="d-flex" role="search">
               {% csrf_token %}
               <input name="searched" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
