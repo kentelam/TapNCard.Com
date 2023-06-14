@@ -79,26 +79,15 @@ WSGI_APPLICATION = 'DjangoApp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#    }
-#}
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'postgresql',
-        'USER': ' linpostgres',
-        'PASSWORD': 'Ew^bR3rh1Q3VDtkj',
-        'HOST': 'lin-23168-8366-pgsql-primary.servers.linodedb.net',
-        'PORT': 5432,
-
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
+
 
 
 # Password validation
