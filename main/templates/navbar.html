@@ -115,7 +115,7 @@
                   <br/><a href="{% url 'profile' user.post.pk %}"><span style="padding: 0px 10px 0px 10px;">{{ user.post.username}}</span><img src="{{ user.post.profile_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px; text-decoration: none;"></a><br/>    
           
                 {% else %}
-                  <br/><a href="{% url 'create-profile' user.pk %}">Create Profile</a><span style="padding: 0px 10px 0px 10px;">{{ user.post.username}}</span><img src="{{ tapncard.default_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;"></a><br/>    
+                  <br/><a href="{% url 'create-profile' user.pk %}">Create Profile</a><span style="padding: 0px 10px 0px 10px;">{{ user.username}}</span><img src="{{ tapncard.default_picture.url }}" class="rounded-circle avatar-lg img-thumbnail" alt="profile-image" style="width: 50px; height: 40px;"></a><br/>    
                 {% endif %}
 
           {% endif %}
