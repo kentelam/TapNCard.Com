@@ -1,0 +1,1505 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://tapncard.com:80
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 128-552-042
+172.56.233.36 - - [21/Jun/2023 05:46:35] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:46:35] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.16 - - [21/Jun/2023 05:46:36] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:46:36] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:48:48] "GET / HTTP/1.1" 200 -
+172.56.233.16 - - [21/Jun/2023 05:48:48] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:48:49] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.16 - - [21/Jun/2023 05:48:49] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:48:51] "GET / HTTP/1.1" 200 -
+172.56.233.16 - - [21/Jun/2023 05:48:51] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:48:52] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.16 - - [21/Jun/2023 05:48:52] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:49:14] "GET / HTTP/1.1" 200 -
+172.56.233.16 - - [21/Jun/2023 05:49:14] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:49:15] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.16 - - [21/Jun/2023 05:49:15] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:49:33] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:49:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.16 - - [21/Jun/2023 05:49:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:49:35] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:53:22] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:22] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:23] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:23] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:23] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:23] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:24] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:24] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:24] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:25] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:25] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:53:25] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:25] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:26] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:26] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:26] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:53:27] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+Not Found: /favicon.ico
+172.56.233.36 - - [21/Jun/2023 05:53:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:53:28] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:53:51] "GET /about/ HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:56] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 05:53:57] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:53:57] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 05:53:57] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.20 - - [21/Jun/2023 05:54:46] "GET / HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:46] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:46] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:46] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:46] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:47] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:48] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:48] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:49] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:54:49] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+Not Found: /favicon.ico
+172.56.233.20 - - [21/Jun/2023 05:54:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.233.20 - - [21/Jun/2023 05:55:19] "GET /members/profile/1/ HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:55:19] "GET /images/profile/background4_ntrVXEg.jpg HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:55:20] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:56:07] "GET / HTTP/1.1" 200 -
+172.56.233.20 - - [21/Jun/2023 05:56:07] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.20 - - [21/Jun/2023 05:56:08] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.20 - - [21/Jun/2023 05:56:08] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:02:47] "GET /members/register/ HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:02:52] "GET / HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:02:52] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:02:53] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:02:53] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:02:57] "GET /members/profile/2/ HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:02:57] "GET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:02:58] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:03:10] "GET / HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:03:10] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:03:10] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:03:11] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:03:19] "GET /members/profile/3/ HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:03:20] "GET /images/profile/Psalms30.5_nhXhhpm.jpeg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:03:25] "GET /members/profile/3/?download_qrcode HTTP/1.1" 200 -
+66.249.83.130 - - [21/Jun/2023 06:04:00] "GET /members/profile/3/ HTTP/1.1" 200 -
+66.249.83.130 - - [21/Jun/2023 06:04:01] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+66.249.83.129 - - [21/Jun/2023 06:04:01] "GET /members/profile/3/?download_qrcode HTTP/1.1" 200 -
+66.249.83.130 - - [21/Jun/2023 06:04:01] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+66.249.83.129 - - [21/Jun/2023 06:04:01] "GET /images/profile/Psalms30.5_nhXhhpm.jpeg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:04:07] "GET / HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 06:04:07] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:04:09] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 06:04:09] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+66.102.7.65 - - [21/Jun/2023 06:04:12] "GET /members/profile/3/ HTTP/1.1" 200 -
+66.102.7.66 - - [21/Jun/2023 06:04:12] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+66.102.7.65 - - [21/Jun/2023 06:04:13] "GET /members/profile/3/?download_qrcode HTTP/1.1" 200 -
+66.102.7.66 - - [21/Jun/2023 06:04:13] "GET /images/profile/Psalms30.5_nhXhhpm.jpeg HTTP/1.1" 200 -
+66.102.7.67 - - [21/Jun/2023 06:04:13] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+74.125.209.40 - - [21/Jun/2023 06:04:19] "GET /images/profile/Psalms30.5_nhXhhpm.jpeg HTTP/1.1" 200 -
+Not Found: /robots.txt
+66.249.65.169 - - [21/Jun/2023 06:04:25] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+66.249.65.167 - - [21/Jun/2023 06:04:25] "HEAD /members/profile/3/ HTTP/1.1" 200 -
+74.125.209.39 - - [21/Jun/2023 06:05:10] "GET /images/profile/Psalms30.5_nhXhhpm.jpeg HTTP/1.1" 200 -
+Not Found: /.env
+109.237.97.180 - - [21/Jun/2023 06:08:58] "[33mGET /.env HTTP/1.1[0m" 404 -
+172.56.232.132 - - [21/Jun/2023 06:12:39] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.132 - - [21/Jun/2023 06:12:39] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.132 - - [21/Jun/2023 06:12:40] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.232.132 - - [21/Jun/2023 06:12:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.132 - - [21/Jun/2023 06:12:44] "GET /members/register/ HTTP/1.1" 200 -
+172.56.232.132 - - [21/Jun/2023 06:12:49] "GET / HTTP/1.1" 200 -
+172.56.232.132 - - [21/Jun/2023 06:12:49] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.132 - - [21/Jun/2023 06:12:49] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.132 - - [21/Jun/2023 06:12:50] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:20:20] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:20:21] "[36mGET /static/main/css/style.css HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:21] "[36mGET /static/main/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:21] "[36mGET /static/main/css/custom.css HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:20:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:20:22] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:20:22] "[36mGET /static/main/images/TapN%20Double%20Card.png HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:23] "[36mGET /static/main/images/top_img3.png HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:23] "[36mGET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:23] "[36mGET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:23] "[36mGET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:24] "[36mGET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:24] "[36mGET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:24] "[36mGET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:24] "[36mGET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:25] "[36mGET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:20:25] "[36mGET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1[0m" 304 -
+172.56.233.36 - - [21/Jun/2023 06:23:11] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:23:12] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:23:12] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:23:13] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:23:16] "GET /members/profile/1/ HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:23:16] "GET /images/profile/background4_ntrVXEg.jpg HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:23:16] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:25:17] "GET /members/profile/1/ HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:25:17] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:25:58] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 06:26:00] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:26:00] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 06:26:00] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+162.142.125.223 - - [21/Jun/2023 06:32:26] "GET / HTTP/1.1" 200 -
+162.142.125.223 - - [21/Jun/2023 06:32:27] "GET / HTTP/1.1" 200 -
+162.142.125.223 - - [21/Jun/2023 06:32:27] code 505, message Invalid HTTP version (2.0)
+162.142.125.223 - - [21/Jun/2023 06:32:27] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+Not Found: /favicon.ico
+162.142.125.223 - - [21/Jun/2023 06:32:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://50.116.1.245:80
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 234-847-309
+172.56.233.36 - - [21/Jun/2023 07:23:58] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 07:23:58] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 07:23:59] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 07:23:59] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+Django version 4.2.2, using settings 'DjangoApp.settings'
+Development server is running at https://50.116.1.245:80/
+Using the Werkzeug debugger (https://werkzeug.palletsprojects.com/)
+Quit the server with CONTROL-C.
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://50.116.1.245:80
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 234-847-309
+172.56.233.36 - - [21/Jun/2023 07:24:33] "GET / HTTP/1.1" 200 -
+172.56.233.36 - - [21/Jun/2023 07:24:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 07:24:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.36 - - [21/Jun/2023 07:24:34] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:24:53] "GET / HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:24:53] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:24:54] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:24:54] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:15] "GET / HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:15] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:15] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:16] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:28] "GET /members/profile/2/ HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:28] "[36mGET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1[0m" 304 -
+172.56.233.132 - - [21/Jun/2023 07:36:28] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:33] "GET / HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:34] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:43] "GET /members/profile/4/ HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:43] "GET /images/profile/background5_is4EC2U.jpg HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:51] "GET /members/profile/4/?download_qrcode HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:55] "GET / HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:36:55] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:55] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:36:56] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:37:27] "GET / HTTP/1.1" 200 -
+172.56.233.132 - - [21/Jun/2023 07:37:27] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:37:27] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.132 - - [21/Jun/2023 07:37:28] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.4 - - [21/Jun/2023 08:01:39] "[36mGET /static/main/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:39] "[36mGET /static/main/css/custom.css HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:39] "[36mGET /static/main/css/style.css HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:39] "[36mGET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:40] "[36mGET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:40] "[36mGET /static/main/images/top_img3.png HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:40] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.4 - - [21/Jun/2023 08:01:40] "[36mGET /static/main/images/TapN%20Double%20Card.png HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:40] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.4 - - [21/Jun/2023 08:01:40] "[36mGET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:41] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.4 - - [21/Jun/2023 08:01:41] "[36mGET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:41] "[36mGET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:41] "[36mGET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:41] "[36mGET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:41] "[36mGET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:41] "[36mGET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1[0m" 304 -
+Not Found: /favicon.ico
+172.56.232.4 - - [21/Jun/2023 08:01:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.4 - - [21/Jun/2023 08:01:50] "GET /members/profile/1/ HTTP/1.1" 200 -
+172.56.232.4 - - [21/Jun/2023 08:01:50] "[36mGET /images/profile/background4_ntrVXEg.jpg HTTP/1.1[0m" 304 -
+172.56.232.4 - - [21/Jun/2023 08:01:51] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+172.56.233.234 - - [21/Jun/2023 08:02:08] "GET / HTTP/1.1" 200 -
+172.56.233.234 - - [21/Jun/2023 08:02:08] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.234 - - [21/Jun/2023 08:02:08] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.234 - - [21/Jun/2023 08:02:09] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+87.236.176.232 - - [21/Jun/2023 08:37:44] "GET / HTTP/1.1" 200 -
+172.56.233.54 - - [21/Jun/2023 12:27:26] "[36mGET /static/main/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:26] "[36mGET /static/main/css/custom.css HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:27] "[36mGET /static/main/css/style.css HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:28] "[36mGET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:28] "[36mGET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:29] "[36mGET /static/main/images/top_img3.png HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:29] "[36mGET /static/main/images/TapN%20Double%20Card.png HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:29] "[36mGET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:29] "[36mGET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:30] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.54 - - [21/Jun/2023 12:27:30] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.54 - - [21/Jun/2023 12:27:30] "[36mGET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:31] "[36mGET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:31] "[36mGET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:31] "[36mGET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1[0m" 304 -
+172.56.233.54 - - [21/Jun/2023 12:27:31] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.54 - - [21/Jun/2023 12:27:31] "[36mGET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1[0m" 304 -
+Not Found: /favicon.ico
+172.56.233.54 - - [21/Jun/2023 12:27:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.233.54 - - [21/Jun/2023 12:27:38] "GET / HTTP/1.1" 200 -
+172.56.233.54 - - [21/Jun/2023 12:27:39] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.54 - - [21/Jun/2023 12:27:39] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.54 - - [21/Jun/2023 12:27:39] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.79 - - [21/Jun/2023 12:34:36] "GET / HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:36] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:37] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:37] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:38] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:38] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:38] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:38] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:39] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:39] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:39] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.79 - - [21/Jun/2023 12:34:40] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:40] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:40] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:40] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:41] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.79 - - [21/Jun/2023 12:34:41] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+172.56.232.79 - - [21/Jun/2023 12:34:41] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.232.79 - - [21/Jun/2023 12:34:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:40:09] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:40:09] "[36mGET /static/main/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:10] "[36mGET /static/main/css/style.css HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:10] "[36mGET /static/main/css/custom.css HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:10] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:40:10] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:40:11] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:40:11] "[36mGET /static/main/images/top_img3.png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:11] "[36mGET /static/main/images/TapN%20Double%20Card.png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:11] "[36mGET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:12] "[36mGET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:12] "[36mGET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:12] "[36mGET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:12] "[36mGET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:13] "[36mGET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:13] "[36mGET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:13] "[36mGET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:14] "[36mGET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 13:40:44] "GET /members/login/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:40:59] "[32mPOST /members/login/ HTTP/1.1[0m" 302 -
+172.56.232.99 - - [21/Jun/2023 13:40:59] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:00] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:41:01] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:41:01] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:41:22] "GET /members/profile/7/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:23] "GET /images/profile/background2_C2gqR1Z.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:23] "GET /members/profile/7/?download_qrcode HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:30] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:31] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:41:31] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:41:32] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:41:42] "GET /members/petprofile/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:42] "GET /static/members/images/beagle-dog-sitting-with-white-background.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:58] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:41:59] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:42:01] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:42:01] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:42:10] "[32mGET /members/logout/ HTTP/1.1[0m" 302 -
+172.56.232.99 - - [21/Jun/2023 13:42:11] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 13:42:11] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:42:13] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 13:42:13] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 13:42:45] "GET / HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:45] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:45] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:45] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:46] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:46] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 13:42:46] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 13:42:46] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:46] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.90 - - [21/Jun/2023 13:42:46] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.233.90 - - [21/Jun/2023 13:42:47] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+Not Found: /favicon.ico
+172.56.233.90 - - [21/Jun/2023 13:42:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 14:17:02] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:02] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:02] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:02] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 14:17:03] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:03] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:03] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:04] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:04] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:04] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 14:17:04] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:05] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:05] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:06] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 14:17:06] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.232.99 - - [21/Jun/2023 14:17:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://tapncard.com:80
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 145-336-765
+172.56.232.99 - - [21/Jun/2023 15:36:17] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:17] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:18] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:18] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:18] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:18] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:19] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:19] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:19] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:20] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:20] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:36:20] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:21] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:21] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:22] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:22] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.232.99 - - [21/Jun/2023 15:36:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:36:23] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:36:33] "GET /members/profile/1/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:34] "GET /images/profile/background4_ntrVXEg.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:34] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:43] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:36:43] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:36:44] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:36:44] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:42:04] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:42:05] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:42:05] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:42:06] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:44:50] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:44:51] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:44:51] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:44:52] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:44:56] "GET /members/profile/1/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:44:57] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:45:21] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 15:45:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:45:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 15:45:22] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 16:17:08] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 16:17:09] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.232.99 - - [21/Jun/2023 16:17:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 16:17:09] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 16:17:09] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://tapncard.com:80
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 960-624-063
+172.56.232.99 - - [21/Jun/2023 17:27:42] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 17:27:43] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 17:27:43] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 17:27:43] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 17:41:19] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 17:41:20] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 17:41:20] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 17:41:20] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://50.116.1.245:80
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 393-339-691
+172.56.232.99 - - [21/Jun/2023 19:26:08] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:09] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:09] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:10] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:10] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:10] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:11] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:11] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:11] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:11] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:12] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 19:26:13] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:13] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:13] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:14] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:14] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:14] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.232.99 - - [21/Jun/2023 19:26:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 19:26:15] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 19:26:22] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 19:26:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 19:26:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 19:26:23] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[36mGET /static/main/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[36mGET /static/main/css/custom.css HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[36mGET /static/main/css/style.css HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[36mGET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[36mGET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[36mGET /static/main/images/top_img3.png HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[36mGET /static/main/images/TapN%20Double%20Card.png HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:09] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[36mGET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[36mGET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[36mGET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[36mGET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[36mGET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[36mGET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[36mGET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1[0m" 304 -
+172.56.233.72 - - [21/Jun/2023 19:27:10] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.233.72 - - [21/Jun/2023 19:27:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.140 - - [21/Jun/2023 19:40:59] "GET / HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:00] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:00] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:01] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:01] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:02] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:02] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:02] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:02] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:02] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:03] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.140 - - [21/Jun/2023 19:41:03] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:03] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:03] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:04] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.140 - - [21/Jun/2023 19:41:04] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:04] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.232.140 - - [21/Jun/2023 19:41:04] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:41:32] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:41:33] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:41:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:41:34] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:41:38] "GET /members/profile/1/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:41:42] "GET /images/profile/background4_ntrVXEg.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:41:42] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:42:13] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:42:15] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:42:15] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:42:16] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:48:49] "GET /members/profile/2/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:48:52] "GET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:48:58] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:49:26] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:49:28] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:49:28] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:49:28] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:49:45] "GET /members/login/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:50:19] "[32mPOST /members/login/ HTTP/1.1[0m" 302 -
+174.251.161.162 - - [21/Jun/2023 19:50:20] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:50:21] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:50:21] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:50:22] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:50:31] "GET /members/petprofile/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:50:32] "GET /static/members/images/beagle-dog-sitting-with-white-background.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:51:39] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:51:40] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:51:40] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:51:40] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:51:49] "GET /members/profile/1/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:51:50] "GET /images/profile/background4_ntrVXEg.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:51:50] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:52:33] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:52:34] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:52:35] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:52:35] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:54:20] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:22] "GET /static/main/css/style.css HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:22] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:22] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:32] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:32] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:33] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:54:34] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:37] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:54:39] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:40] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:41] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:54:57] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 19:54:59] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:55:17] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:55:18] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:55:21] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 19:55:24] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+Error on request:
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/werkzeug/serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "/root/env/lib/python3.9/site-packages/werkzeug/serving.py", line 328, in execute
+    write(data)
+  File "/root/env/lib/python3.9/site-packages/werkzeug/serving.py", line 303, in write
+    self.wfile.write(data)
+  File "/usr/lib/python3.9/socketserver.py", line 799, in write
+    self._sock.sendall(b)
+  File "/usr/lib/python3.9/ssl.py", line 1204, in sendall
+    v = self.send(byte_view[count:])
+  File "/usr/lib/python3.9/ssl.py", line 1173, in send
+    return self._sslobj.write(data)
+TimeoutError: [Errno 110] Connection timed out
+172.56.232.99 - - [21/Jun/2023 20:09:25] "GET /members/profile/1/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 20:09:28] "GET /images/profile/background4_ntrVXEg.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 20:09:28] "GET /members/profile/1/?download_qrcode HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 20:13:20] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 20:13:21] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 20:13:22] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 20:13:22] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+ * New file /root/TapNCard.Com/main/templates/main/.home.html.swp added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/main/.home.html.swp', reset template loaders
+ * New file /root/TapNCard.Com/main/templates/main/.home.html.swp added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/main/.home.html.swp', reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/main/home.html', reset template loaders
+172.56.232.99 - - [21/Jun/2023 20:27:40] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 20:27:41] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 20:27:42] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 20:27:42] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+ * New file /root/TapNCard.Com/main/templates/main/.base.html.swp added, reset template loaders
+ * New file /root/TapNCard.Com/main/templates/.base.html.swp added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/.base.html.swp', reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/base.html', reset template loaders
+172.56.232.99 - - [21/Jun/2023 20:34:47] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 20:34:47] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 20:34:48] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 20:34:48] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+ * New file /root/TapNCard.Com/main/templates/main/.terms.html.swp added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/main/.terms.html.swp', reset template loaders
+ * New file /root/TapNCard.Com/main/templates/main/terms.html added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/main/terms.html', reset template loaders
+ * New file /root/TapNCard.Com/main/templates/main/.privacy.html.swp added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/main/.privacy.html.swp', reset template loaders
+ * New file /root/TapNCard.Com/main/templates/main/privacy.html added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/views.py', reloading
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+Django version 4.2.2, using settings 'DjangoApp.settings'
+Development server is running at https://50.116.1.245:80/
+Using the Werkzeug debugger (https://werkzeug.palletsprojects.com/)
+Quit the server with CONTROL-C.
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 393-339-691
+ * Detected change in '/root/TapNCard.Com/main/urls.py', reloading
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+Django version 4.2.2, using settings 'DjangoApp.settings'
+Development server is running at https://50.116.1.245:80/
+Using the Werkzeug debugger (https://werkzeug.palletsprojects.com/)
+Quit the server with CONTROL-C.
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 393-339-691
+ * New file /root/TapNCard.Com/main/templates/.base.html.swp added, reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/.base.html.swp', reset template loaders
+ * Detected change in '/root/TapNCard.Com/main/templates/base.html', reset template loaders
+172.56.232.99 - - [21/Jun/2023 21:07:11] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:07:11] "[36mGET /static/main/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:12] "[36mGET /static/main/css/style.css HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:12] "[36mGET /static/main/css/custom.css HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:12] "[36mGET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:12] "[36mGET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:12] "[36mGET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:12] "[36mGET /static/main/images/top_img3.png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:12] "[36mGET /static/main/images/TapN%20Double%20Card.png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:13] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:07:13] "[36mGET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:13] "[36mGET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:13] "[36mGET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:13] "[36mGET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:14] "[36mGET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:14] "[36mGET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1[0m" 304 -
+172.56.232.99 - - [21/Jun/2023 21:07:14] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:07:14] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:07:19] "GET /terms/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:07:32] "GET /privacy/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:07:36] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:07:37] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:07:37] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:07:38] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:08:48] "GET /contact/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:08:51] "GET /privacy/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:08:58] "GET /terms/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:10:05] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:10:06] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:10:07] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:10:07] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:11:45] "GET /terms/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:11:50] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:11:53] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:11:53] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:11:53] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:12:03] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:12:07] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:12:07] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:12:08] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:12:18] "GET /privacy/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:12:28] "GET /terms/ HTTP/1.1" 200 -
+167.248.133.52 - - [21/Jun/2023 21:14:55] "GET / HTTP/1.1" 200 -
+167.248.133.52 - - [21/Jun/2023 21:14:55] "GET / HTTP/1.1" 200 -
+167.248.133.52 - - [21/Jun/2023 21:14:55] code 505, message Invalid HTTP version (2.0)
+167.248.133.52 - - [21/Jun/2023 21:14:55] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+Not Found: /favicon.ico
+167.248.133.52 - - [21/Jun/2023 21:14:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:22:55] "GET /members/profile/2/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:22:56] "GET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:22:56] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:23:26] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 21:23:26] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:23:27] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 21:23:27] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+205.210.31.107 - - [21/Jun/2023 21:30:18] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:37:53] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:37:55] "[36mGET /static/main/css/style.css HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:55] "[36mGET /static/main/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:55] "[36mGET /static/main/css/custom.css HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:56] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:37:57] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:37:57] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:37:57] "[36mGET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:58] "[36mGET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:58] "[36mGET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:58] "[36mGET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:58] "[36mGET /static/main/images/top_img3.png HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:58] "[36mGET /static/main/images/TapN%20Double%20Card.png HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:59] "[36mGET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:59] "[36mGET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:59] "[36mGET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:59] "[36mGET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:37:59] "[36mGET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:38:12] "[32mGET /members/logout/ HTTP/1.1[0m" 302 -
+174.251.161.162 - - [21/Jun/2023 21:38:12] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:38:13] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:38:14] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:38:15] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:39:00] "GET /members/profile/2/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:39:02] "[36mGET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1[0m" 304 -
+174.251.161.162 - - [21/Jun/2023 21:39:03] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:39:25] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:39:30] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:39:31] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:39:31] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:39:31] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:40:58] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:01] "GET /static/main/css/style.css HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:06] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:06] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:15] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:15] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:41:16] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:41:18] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:19] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:23] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:24] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:24] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:41:25] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+66.102.7.65 - - [21/Jun/2023 21:41:35] "GET / HTTP/1.1" 200 -
+66.102.7.66 - - [21/Jun/2023 21:41:36] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+66.102.7.65 - - [21/Jun/2023 21:41:36] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+66.102.7.67 - - [21/Jun/2023 21:41:36] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+66.102.7.66 - - [21/Jun/2023 21:41:36] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+66.102.7.65 - - [21/Jun/2023 21:41:36] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+66.102.7.65 - - [21/Jun/2023 21:41:36] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+66.102.7.65 - - [21/Jun/2023 21:41:36] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+66.102.7.65 - - [21/Jun/2023 21:41:36] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+66.102.7.66 - - [21/Jun/2023 21:41:36] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+66.102.7.66 - - [21/Jun/2023 21:41:36] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:42] "GET / HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:42] "GET /static/main/css/style.css HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:42] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:43] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:43] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:43] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:43] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:43] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:43] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:44] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:44] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+99.23.1.223 - - [21/Jun/2023 21:41:44] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:44] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:44] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:44] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:44] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:41:45] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+99.23.1.223 - - [21/Jun/2023 21:41:45] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+99.23.1.223 - - [21/Jun/2023 21:41:46] "[33mGET /static/main/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1[0m" 404 -
+99.23.1.223 - - [21/Jun/2023 21:42:00] "GET /terms/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:42:07] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:42:10] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:42:14] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:42:31] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:42:46] "GET /terms/ HTTP/1.1" 200 -
+Not Found: /favicon.ico
+174.251.161.162 - - [21/Jun/2023 21:42:51] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:43:05] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:43:08] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:43:10] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:43:33] "GET /privacy/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:43:36] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:43:38] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+99.23.1.223 - - [21/Jun/2023 21:43:43] "GET /contact/ HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:43:48] "GET / HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:43:52] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:43:52] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:43:54] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+174.251.161.162 - - [21/Jun/2023 21:43:54] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+174.251.161.162 - - [21/Jun/2023 21:43:56] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.58.103.117 - - [21/Jun/2023 21:44:31] "GET / HTTP/1.1" 200 -
+172.58.103.117 - - [21/Jun/2023 21:44:32] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.58.103.117 - - [21/Jun/2023 21:44:33] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.58.103.117 - - [21/Jun/2023 21:44:33] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.58.103.117 - - [21/Jun/2023 21:44:33] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.58.103.117 - - [21/Jun/2023 21:44:34] "[33mGET /static/main/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1[0m" 404 -
+172.58.103.117 - - [21/Jun/2023 21:45:09] "GET /terms/ HTTP/1.1" 200 -
+Not Found: /favicon.ico
+174.251.161.162 - - [21/Jun/2023 21:46:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on https://50.116.1.245:80
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 131-713-041
+172.56.232.99 - - [21/Jun/2023 22:41:22] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:22] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:23] "GET /static/main/css/custom.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:23] "GET /static/main/css/style.css HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:24] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:24] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:24] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:25] "GET /static/main/images/TapN%20Blue%20&%20White(1).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:26] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:26] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:27] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+Not Found: /favicon.ico
+172.56.232.99 - - [21/Jun/2023 22:41:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 22:41:28] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:28] "GET /static/main/images/top_img3.png HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:28] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:29] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:29] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 22:41:30] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:30] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 22:41:38] "GET /members/profile/2/ HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:39] "GET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:40] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:46] "GET / HTTP/1.1" 200 -
+172.56.232.99 - - [21/Jun/2023 22:41:47] "[33mGET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 22:41:48] "[33mGET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1[0m" 404 -
+172.56.232.99 - - [21/Jun/2023 22:41:48] "[33mGET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 404 -
+Watching for file changes with StatReloader
+[21/Jun/2023 22:47:31] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 22:47:32] "GET /static/main/css/style.css HTTP/1.1" 200 1235
+[21/Jun/2023 22:47:32] "GET /static/main/css/custom.css HTTP/1.1" 200 420
+[21/Jun/2023 22:47:32] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 31000
+[21/Jun/2023 22:47:33] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[21/Jun/2023 22:47:33] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[21/Jun/2023 22:47:35] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[21/Jun/2023 22:47:36] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+Not Found: /favicon.ico
+[21/Jun/2023 22:47:37] "GET /favicon.ico HTTP/1.1" 404 3811
+[21/Jun/2023 22:47:39] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[21/Jun/2023 22:47:41] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[21/Jun/2023 22:47:45] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[21/Jun/2023 22:47:46] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[21/Jun/2023 22:47:48] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 22:47:49] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[21/Jun/2023 22:47:51] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[21/Jun/2023 22:47:53] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 443137
+[21/Jun/2023 22:47:59] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 1680460
+[21/Jun/2023 22:48:04] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 2388188
+[21/Jun/2023 22:48:47] code 400, message Bad request version ('À\x13À')
+[21/Jun/2023 22:48:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:48:49] code 400, message Bad request version ('À\x13À')
+[21/Jun/2023 22:48:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:52:08] code 400, message Bad request version ('À\x13À')
+[21/Jun/2023 22:52:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:52:09] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03èÚ\x9dS\x17A\x0b')
+[21/Jun/2023 22:52:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:52:09] code 400, message Bad request version ('À\x13À')
+[21/Jun/2023 22:52:09] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:52:10] code 400, message Bad request version ('À\x13À')
+[21/Jun/2023 22:52:10] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:52:10] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 22:52:11] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[21/Jun/2023 22:52:11] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[21/Jun/2023 22:52:11] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[21/Jun/2023 22:52:11] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[21/Jun/2023 22:52:11] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[21/Jun/2023 22:52:11] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[21/Jun/2023 22:52:12] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[21/Jun/2023 22:52:12] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 443137
+[21/Jun/2023 22:52:12] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[21/Jun/2023 22:52:12] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 1680460
+[21/Jun/2023 22:52:12] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 2388188
+[21/Jun/2023 22:52:13] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[21/Jun/2023 22:52:13] code 400, message Bad request version ('\x12ð')
+[21/Jun/2023 22:52:13] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:52:15] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03>·\x1a')
+[21/Jun/2023 22:52:15] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:52:27] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 22:52:28] "GET /static/main/css/custom.css HTTP/1.1" 200 420
+[21/Jun/2023 22:52:28] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 31000
+[21/Jun/2023 22:52:28] "GET /static/main/css/style.css HTTP/1.1" 200 1235
+[21/Jun/2023 22:52:30] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[21/Jun/2023 22:52:30] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[21/Jun/2023 22:52:31] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[21/Jun/2023 22:52:32] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[21/Jun/2023 22:52:34] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 22:52:36] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[21/Jun/2023 22:52:43] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[21/Jun/2023 22:52:46] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[21/Jun/2023 22:52:49] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[21/Jun/2023 22:54:41] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 22:54:41] "GET /static/main/css/style.css HTTP/1.1" 200 1235
+[21/Jun/2023 22:54:41] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 31000
+[21/Jun/2023 22:54:41] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[21/Jun/2023 22:54:41] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[21/Jun/2023 22:54:41] "GET /static/main/css/custom.css HTTP/1.1" 200 420
+[21/Jun/2023 22:54:41] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[21/Jun/2023 22:54:41] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[21/Jun/2023 22:54:41] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[21/Jun/2023 22:54:41] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[21/Jun/2023 22:54:41] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[21/Jun/2023 22:54:41] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[21/Jun/2023 22:54:41] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 443137
+[21/Jun/2023 22:54:41] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[21/Jun/2023 22:54:42] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 22:54:42] "GET /static/main/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 22:54:42] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[21/Jun/2023 22:54:42] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 2388188
+[21/Jun/2023 22:54:42] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 1680460
+[21/Jun/2023 22:54:50,841] - Broken pipe from ('99.23.1.223', 49397)
+[21/Jun/2023 22:54:50,842] - Broken pipe from ('99.23.1.223', 49393)
+[21/Jun/2023 22:54:50,842] - Broken pipe from ('99.23.1.223', 49394)
+[21/Jun/2023 22:54:50,842] - Broken pipe from ('99.23.1.223', 49396)
+[21/Jun/2023 22:54:51,839] - Broken pipe from ('99.23.1.223', 49392)
+[21/Jun/2023 22:55:51] code 400, message Bad request version ("x64|'|'|No|'|'|0.7d|'|'|..|'|'|AA==|'|'|112.inf|'|'|SGFjS2VkDQoxOTIuMTY4LjkyLjIyMjo1NTUyDQpEZXNrdG9wDQpjbGllbnRhLmV4ZQ0KRmFsc2UNCkZhbHNlDQpUcnVlDQpGYWxzZQ==12.act|'|'|AA==")
+[21/Jun/2023 22:55:51] "145.ll|'|'|SGFjS2VkX0Q0OTkwNjI3|'|'|WIN-JNAPIER0859|'|'|JNapier|'|'|19-02-01|'|'||'|'|Win 7 Professional SP1 x64|'|'|No|'|'|0.7d|'|'|..|'|'|AA==|'|'|112.inf|'|'|SGFjS2VkDQoxOTIuMTY4LjkyLjIyMjo1NTUyDQpEZXNrdG9wDQpjbGllbnRhLmV4ZQ0KRmFsc2UNCkZhbHNlDQpUcnVlDQpGYWxzZQ==12.act|'|'|AA==" 400 -
+[21/Jun/2023 22:58:58] code 400, message Bad request syntax ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03òË'x[")
+[21/Jun/2023 22:58:58] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 22:59:00] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[21/Jun/2023 22:59:00] code 400, message Bad request version ('À\x13À')
+[21/Jun/2023 22:59:00] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:01:12] "GET / HTTP/1.1" 200 19702
+Not Found: /_profiler/empty/search/results
+[21/Jun/2023 23:01:15] "GET /_profiler/empty/search/results HTTP/1.1" 404 3887
+[21/Jun/2023 23:01:34] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 23:02:27] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 23:02:27] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[21/Jun/2023 23:02:27] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[21/Jun/2023 23:02:27] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 23:02:27] "GET /static/main/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 23:05:43] code 400, message Bad request version ('þJR\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('\x8eºè¨o"')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('\x19¢k:1êáq°\\VeSBT\x89¦\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('¬jS)\x80H\x94Ë\x00\x15W¼\x95Zéñ£-Ä-\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('ª\'\x97Å²\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('Ñðß\x16,/Kq8(î^\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('Ç\x10rTäBÁ3,"7ãq\x0e`ñ×Î3qe2\'AS¨\x7f\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('\x8bÜVâ\x8aæx÷\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:05:44] code 400, message Bad request version ('çÊi\x06z\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:05:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /robots.txt
+[21/Jun/2023 23:05:48] "GET /robots.txt HTTP/1.1" 404 3807
+Not Found: /oacdp/tools/vw659.2-2.png
+[21/Jun/2023 23:05:48] "GET /oacdp/tools/vw659.2-2.png HTTP/1.1" 404 3867
+[21/Jun/2023 23:06:20] code 400, message Bad request version ('ç=\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:06:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:06:20] code 400, message Bad request version ('\x8fØ\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:06:20] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:06:36] code 400, message Bad request version ('ÓÞ´hV¾PGù?ÑÿQ¥§AÖgþ\x87>ß\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:06:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:06:36] code 400, message Bad request version (']\x84-G`ý±\x98\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:06:36] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:06:47] code 400, message Bad request version ('e]18\x80\x94®')
+[21/Jun/2023 23:06:47] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:06:48] code 400, message Bad request version ('dÿ5ÈbÌþô3\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:06:48] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:06:49] code 400, message Bad request version ('\x018\x93')
+[21/Jun/2023 23:06:49] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:07:18] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03b\x97:D6O×ÍÓ\x99\x80«(îü3'K.fP57ï\x106\x93`,¿Xe")
+[21/Jun/2023 23:07:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:07:18] code 400, message Bad request version ('o}\x8eä57\x81í\x80þ\x89ODÓ;5}\x12K"ëaã§²\x91\x96ÓØpò9\x00"\x13\x03\x13\x01\x13\x02À+À/Ì©Ì¨À,À0À')
+[21/Jun/2023 23:07:18] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /actuator/gateway/routes
+[21/Jun/2023 23:07:27] "GET /actuator/gateway/routes HTTP/1.1" 404 3862
+[21/Jun/2023 23:07:56] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ïÉ£H')
+[21/Jun/2023 23:07:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:07:56] code 400, message Bad request version ('\x00\x02\x01\x00ÿ\x01\x00\x01\x00\x00')
+[21/Jun/2023 23:07:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[21/Jun/2023 23:08:10] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 23:08:10] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 31000
+[21/Jun/2023 23:08:10] "GET /static/main/css/custom.css HTTP/1.1" 200 420
+[21/Jun/2023 23:08:10] "GET /static/main/css/style.css HTTP/1.1" 200 1235
+[21/Jun/2023 23:08:14] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[21/Jun/2023 23:08:14] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[21/Jun/2023 23:08:18] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[21/Jun/2023 23:08:19] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[21/Jun/2023 23:08:23] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[21/Jun/2023 23:08:24] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 23:08:26] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[21/Jun/2023 23:08:27] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[21/Jun/2023 23:08:37] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[21/Jun/2023 23:09:26] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 443137
+[21/Jun/2023 23:09:28] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[21/Jun/2023 23:09:31] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[21/Jun/2023 23:10:00] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 1680460
+[21/Jun/2023 23:10:13] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 2388188
+Not Found: /favicon.ico
+[21/Jun/2023 23:10:15] "GET /favicon.ico HTTP/1.1" 404 3811
+[21/Jun/2023 23:11:48] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 23:11:48] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[21/Jun/2023 23:11:48] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[21/Jun/2023 23:11:49] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[21/Jun/2023 23:11:58] "GET /members/profile/3/ HTTP/1.1" 200 18490
+[21/Jun/2023 23:11:58] "GET /members/profile/3/?download_qrcode HTTP/1.1" 200 350
+[21/Jun/2023 23:12:12] "GET / HTTP/1.1" 200 19702
+[21/Jun/2023 23:12:13] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[21/Jun/2023 23:12:13] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[21/Jun/2023 23:12:13] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+Invalid HTTP_HOST header: 'www.corpleadermil.net'. You may need to add 'www.corpleadermil.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.corpleadermil.net'. You may need to add 'www.corpleadermil.net' to ALLOWED_HOSTS.
+Bad Request: /
+[21/Jun/2023 23:23:43] "POST / HTTP/1.1" 400 61222
+[21/Jun/2023 23:31:08] "GET / HTTP/1.1" 200 19702
+Invalid HTTP_HOST header: 'www.google.com:443'. You may need to add 'www.google.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.google.com:443'. You may need to add 'www.google.com' to ALLOWED_HOSTS.
+Bad Request: /www.google.com:443
+[21/Jun/2023 23:52:37] "CONNECT www.google.com:443 HTTP/1.1" 400 60414
+Not Found: /geoserver
+[22/Jun/2023 00:00:28] "GET /geoserver HTTP/1.1" 404 3806
+[22/Jun/2023 00:17:26] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 00:17:26] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Jun/2023 00:35:19] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 00:43:16] "GET / HTTP/1.1" 200 19702
+Invalid HTTP_HOST header: 'www.elegantwholeenergyapps.com'. You may need to add 'www.elegantwholeenergyapps.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.elegantwholeenergyapps.com'. You may need to add 'www.elegantwholeenergyapps.com' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jun/2023 00:51:42] "POST / HTTP/1.1" 400 62205
+[22/Jun/2023 01:05:33] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 01:05:33,606] - Broken pipe from ('73.184.20.81', 54332)
+Not Found: /.env
+[22/Jun/2023 01:09:17] "GET /.env HTTP/1.1" 404 3783
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 01:09:17] "POST / HTTP/1.1" 403 2870
+[22/Jun/2023 01:19:22] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 01:19:22] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 304 0
+[22/Jun/2023 01:19:22] "GET /static/main/css/style.css HTTP/1.1" 304 0
+[22/Jun/2023 01:19:22] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 304 0
+[22/Jun/2023 01:19:22] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 304 0
+[22/Jun/2023 01:19:22] "GET /static/main/css/custom.css HTTP/1.1" 304 0
+[22/Jun/2023 01:19:22] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /static/main/images/top_img3.png HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[22/Jun/2023 01:19:23] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 304 0
+[22/Jun/2023 01:19:23] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[22/Jun/2023 01:19:23] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[22/Jun/2023 01:19:23] "GET /static/main/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1" 404 1968
+[22/Jun/2023 01:19:40,102] - Broken pipe from ('98.196.132.89', 55659)
+[22/Jun/2023 01:19:40,103] - Broken pipe from ('98.196.132.89', 55658)
+[22/Jun/2023 01:28:06] "GET / HTTP/1.1" 200 19702
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 01:28:58] "POST / HTTP/1.1" 403 2870
+Forbidden (CSRF cookie not set.): /boaform/admin/formLogin
+[22/Jun/2023 01:39:19] "POST /boaform/admin/formLogin HTTP/1.1" 403 2870
+[22/Jun/2023 02:18:25] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 02:31:53] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 02:32:28] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 02:32:28] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Jun/2023 03:00:54] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 03:00:54] "GET /static/main/css/custom.css HTTP/1.1" 200 420
+[22/Jun/2023 03:00:54] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 304 0
+[22/Jun/2023 03:00:54] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 31000
+[22/Jun/2023 03:00:54] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 304 0
+[22/Jun/2023 03:00:54] "GET /static/main/css/style.css HTTP/1.1" 200 1235
+[22/Jun/2023 03:00:54] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 304 0
+[22/Jun/2023 03:00:55] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 304 0
+[22/Jun/2023 03:00:55] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 304 0
+[22/Jun/2023 03:00:55] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 304 0
+[22/Jun/2023 03:00:55] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 304 0
+[22/Jun/2023 03:00:55] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[22/Jun/2023 03:00:55] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[22/Jun/2023 03:00:55] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[22/Jun/2023 03:00:55] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[22/Jun/2023 03:00:55] "GET /static/main/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1" 404 1968
+[22/Jun/2023 03:00:55] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[22/Jun/2023 03:00:55] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[22/Jun/2023 03:00:55] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[22/Jun/2023 03:32:21] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 04:13:46] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 04:19:49] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 04:30:56] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 04:30:56] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Jun/2023 04:32:24] "GET / HTTP/1.1" 200 19702
+Invalid HTTP_HOST header: 'androiddevil.net'. You may need to add 'androiddevil.net' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'androiddevil.net'. You may need to add 'androiddevil.net' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jun/2023 04:40:02] "POST / HTTP/1.1" 400 60894
+[22/Jun/2023 05:18:17] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 05:18:17,269] - Broken pipe from ('64.62.197.61', 31553)
+Not Found: /favicon.ico
+[22/Jun/2023 05:19:40] "GET /favicon.ico HTTP/1.1" 404 3811
+Not Found: /geoserver/web/
+[22/Jun/2023 05:20:26] "GET /geoserver/web/ HTTP/1.1" 404 3822
+Invalid HTTP_HOST header: 'www.getmysticquikhoney.com'. You may need to add 'www.getmysticquikhoney.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.getmysticquikhoney.com'. You may need to add 'www.getmysticquikhoney.com' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jun/2023 05:23:02] "POST / HTTP/1.1" 400 60957
+[22/Jun/2023 05:28:58] "GET / HTTP/1.1" 200 19702
+Not Found: /wp-commentin.php
+Not Found: /wp-cc.php
+[22/Jun/2023 05:47:36] "GET /wp-cc.php HTTP/1.1" 404 3803
+[22/Jun/2023 05:47:36] "GET /wp-commentin.php HTTP/1.1" 404 3831
+Forbidden (CSRF cookie not set.): /GponForm/diag_Form
+[22/Jun/2023 06:27:03] "POST /GponForm/diag_Form?images/ HTTP/1.1" 403 2870
+[22/Jun/2023 06:27:04,198] - Broken pipe from ('120.85.115.81', 16649)
+[22/Jun/2023 06:29:28] "GET / HTTP/1.1" 200 19702
+Not Found: /favicon.ico
+[22/Jun/2023 06:29:29] "GET /favicon.ico HTTP/1.1" 404 3811
+[22/Jun/2023 06:34:33] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 06:39:40] "GET / HTTP/1.1" 200 19702
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 06:54:41] "POST / HTTP/1.1" 403 2870
+Invalid HTTP_HOST header: 'lovenighteggbo.com'. You may need to add 'lovenighteggbo.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'lovenighteggbo.com'. You may need to add 'lovenighteggbo.com' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jun/2023 07:08:13] "POST / HTTP/1.1" 400 60805
+----------------------------------------
+Exception occurred during processing of request from ('5.250.42.76', 45182)
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/socketserver.py", line 650, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.9/socketserver.py", line 360, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.9/socketserver.py", line 720, in __init__
+    self.handle()
+  File "/root/env/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 229, in handle
+    self.handle_one_request()
+  File "/root/env/lib/python3.9/site-packages/django/core/servers/basehttp.py", line 237, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [Errno 110] Connection timed out
+----------------------------------------
+[22/Jun/2023 07:17:35] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00')
+[22/Jun/2023 07:17:35] You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /.env
+[22/Jun/2023 07:24:53] "GET /.env HTTP/1.1" 404 3783
+[22/Jun/2023 07:24:53] code 400, message Bad request version ('\x00b\x13\x02\x13\x03\x13\x01À,À0À+À/Ì©Ì¨\x00£\x00\x9f\x00¢\x00\x9eÌªÀ¯À\xadÀ$À(À')
+[22/Jun/2023 07:24:53] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Jun/2023 07:26:50] "GET / HTTP/1.1" 200 19702
+Forbidden (CSRF cookie not set.): /
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 08:34:02,903] - Broken pipe from ('5.106.241.203', 42182)
+[22/Jun/2023 08:34:03,261] - Broken pipe from ('5.106.241.203', 42183)
+[22/Jun/2023 08:34:03,641] - Broken pipe from ('5.106.241.203', 42184)
+[22/Jun/2023 08:34:04,007] - Broken pipe from ('5.106.241.203', 42185)
+[22/Jun/2023 08:34:04,354] - Broken pipe from ('5.106.241.203', 42186)
+[22/Jun/2023 08:34:04,715] - Broken pipe from ('5.106.241.203', 42187)
+[22/Jun/2023 08:34:05,065] - Broken pipe from ('5.106.241.203', 42188)
+[22/Jun/2023 08:34:05,429] - Broken pipe from ('5.106.241.203', 42189)
+[22/Jun/2023 08:34:05,769] - Broken pipe from ('5.106.241.203', 42190)
+[22/Jun/2023 08:34:06,197] - Broken pipe from ('5.106.241.203', 42191)
+[22/Jun/2023 08:34:06,576] - Broken pipe from ('5.106.241.203', 42192)
+[22/Jun/2023 08:34:06,943] - Broken pipe from ('5.106.241.203', 42193)
+[22/Jun/2023 08:34:07,299] - Broken pipe from ('5.106.241.203', 42194)
+[22/Jun/2023 08:34:07,655] - Broken pipe from ('5.106.241.203', 42195)
+[22/Jun/2023 08:37:44] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 08:53:16] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 08:53:16] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Jun/2023 09:07:40] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 09:16:27] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 09:16:28,164] - Broken pipe from ('85.121.193.204', 48653)
+[22/Jun/2023 09:31:35] "GET / HTTP/1.1" 200 19702
+Invalid HTTP_HOST header: 'www.streetmarbinvintage.com'. You may need to add 'www.streetmarbinvintage.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.streetmarbinvintage.com'. You may need to add 'www.streetmarbinvintage.com' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jun/2023 09:45:40] "GET / HTTP/1.1" 200 19702
+Not Found: /.env
+[22/Jun/2023 09:52:08] "GET /.env HTTP/1.1" 404 3783
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 09:52:08] "POST / HTTP/1.1" 403 2870
+[22/Jun/2023 10:23:16] "GET / HTTP/1.0" 200 19702
+Not Found: /systembc/password.php
+[22/Jun/2023 10:26:59] "GET /systembc/password.php HTTP/1.0" 404 3851
+[22/Jun/2023 10:29:38] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 10:34:01] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 10:35:38] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 10:35:38] You're accessing the development server over HTTPS, but it only supports HTTP.
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 10:38:27] "POST / HTTP/1.1" 403 2870
+[22/Jun/2023 11:03:11] "GET / HTTP/1.1" 200 19702
+Forbidden (CSRF cookie not set.): /HNAP1/
+[22/Jun/2023 11:03:12] "POST /HNAP1/ HTTP/1.1" 403 2870
+[22/Jun/2023 11:03:12,167] - Broken pipe from ('95.214.27.201', 49786)
+Forbidden (CSRF cookie not set.): /boaform/admin/formLogin
+[22/Jun/2023 11:29:24] "POST /boaform/admin/formLogin HTTP/1.1" 403 2870
+Invalid HTTP_HOST header: 'sbloghype.com'. You may need to add 'sbloghype.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'sbloghype.com'. You may need to add 'sbloghype.com' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jun/2023 11:38:38] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 12:02:43] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 12:02:43] "GET / HTTP/1.1" 200 19702
+Not Found: /wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:44] "GET /wp-includes/wlwmanifest.xml HTTP/1.1" 404 3875
+Not Found: /xmlrpc.php
+[22/Jun/2023 12:02:44] "GET /xmlrpc.php?rsd HTTP/1.1" 404 3811
+[22/Jun/2023 12:02:45] "GET / HTTP/1.1" 200 19702
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:45] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /web/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:46] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:46] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3915
+Not Found: /website/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:46] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3907
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:47] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3887
+Not Found: /news/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:47] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:47] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:48] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:48] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:48] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /test/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:49] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:49] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /site/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:50] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:50] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[22/Jun/2023 12:02:50] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 12:06:37] "POST / HTTP/1.1" 403 2870
+Not Found: /.env
+[22/Jun/2023 12:08:53] "GET /.env HTTP/1.1" 404 3783
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 12:08:55] "POST / HTTP/1.1" 403 2870
+[22/Jun/2023 12:10:33] "GET / HTTP/1.1" 200 19702
+Not Found: /HNAP1/
+[22/Jun/2023 12:10:34] "GET /HNAP1/ HTTP/1.1" 404 3790
+[22/Jun/2023 12:32:08] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 12:32:08] You're accessing the development server over HTTPS, but it only supports HTTP.
+[22/Jun/2023 12:32:46] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 12:33:59] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 12:33:59] You're accessing the development server over HTTPS, but it only supports HTTP.
+Invalid HTTP_HOST header: 'localhost:8080'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/root/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/root/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/root/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/root/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'localhost:8080'. You may need to add 'localhost' to ALLOWED_HOSTS.
+Bad Request: /
+[22/Jun/2023 12:34:02] "GET / HTTP/1.0" 400 60345
+[22/Jun/2023 12:34:10] "GET / HTTP/1.1" 200 19702
+Not Found: /favicon.ico
+[22/Jun/2023 12:34:35] "GET /favicon.ico HTTP/1.1" 404 3811
+Not Found: /robots.txt
+[22/Jun/2023 12:34:36] "GET /robots.txt HTTP/1.1" 404 3807
+Not Found: /sitemap.xml
+[22/Jun/2023 12:34:38] "GET /sitemap.xml HTTP/1.1" 404 3811
+Forbidden (CSRF cookie not set.): /GponForm/diag_Form
+[22/Jun/2023 12:39:45] "POST /GponForm/diag_Form?images/ HTTP/1.1" 403 2870
+[22/Jun/2023 12:39:50,424] - Broken pipe from ('190.109.227.84', 46680)
+Not Found: /druid/index.html
+[22/Jun/2023 12:40:09] "GET /druid/index.html HTTP/1.1" 404 3831
+[22/Jun/2023 13:08:56] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 13:08:57] "GET / HTTP/1.1" 200 19702
+Not Found: /wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:08:58] "GET /wp-includes/wlwmanifest.xml HTTP/1.1" 404 3875
+Not Found: /xmlrpc.php
+[22/Jun/2023 13:08:58] "GET /xmlrpc.php?rsd HTTP/1.1" 404 3811
+[22/Jun/2023 13:08:58] "GET / HTTP/1.1" 200 19702
+Not Found: /blog/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:08:59] "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /web/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:08:59] "GET /web/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:00] "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3915
+Not Found: /website/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:00] "GET /website/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3907
+Not Found: /wp/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:00] "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3887
+Not Found: /news/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:01] "GET /news/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /2020/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:01] "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /2019/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:01] "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /shop/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:02] "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:02] "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /test/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:03] "GET /test/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:03] "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /site/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:03] "GET /site/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+Not Found: /cms/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:04] "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3891
+Not Found: /sito/wp-includes/wlwmanifest.xml
+[22/Jun/2023 13:09:04] "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.1" 404 3895
+[22/Jun/2023 13:09:05] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 13:36:39] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 13:46:30] "GET / HTTP/1.1" 200 19702
+Not Found: /.env
+[22/Jun/2023 14:06:04] "GET /.env HTTP/1.1" 404 3783
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 14:06:04] "POST / HTTP/1.1" 403 2870
+[22/Jun/2023 14:14:29] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 14:27:14] code 400, message Bad request version ('À\x14À')
+[22/Jun/2023 14:27:14] You're accessing the development server over HTTPS, but it only supports HTTP.
+Forbidden (CSRF cookie not set.): /boaform/admin/formLogin
+[22/Jun/2023 14:34:02] "POST /boaform/admin/formLogin HTTP/1.1" 403 2870
+[22/Jun/2023 14:41:03] "GET / HTTP/1.1" 200 19702
+Forbidden (CSRF cookie not set.): /
+[22/Jun/2023 14:53:17] "POST / HTTP/1.1" 403 2870
+Forbidden (CSRF cookie not set.): /boaform/admin/formLogin
+[22/Jun/2023 15:16:20] "POST /boaform/admin/formLogin HTTP/1.1" 403 2870
+Watching for file changes with StatReloader
+[22/Jun/2023 16:06:10] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:06:10] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:06:10] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:06:11] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+[22/Jun/2023 16:08:07] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:08:08] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[22/Jun/2023 16:08:08] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[22/Jun/2023 16:08:09] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 2388188
+[22/Jun/2023 16:08:09] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[22/Jun/2023 16:08:09] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 443137
+[22/Jun/2023 16:08:10] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[22/Jun/2023 16:08:10] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[22/Jun/2023 16:08:10] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[22/Jun/2023 16:08:11] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[22/Jun/2023 16:08:12] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[22/Jun/2023 16:08:12] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 1680460
+[22/Jun/2023 16:08:13] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:08:14] "GET /static/main/css/style.css HTTP/1.1" 200 1235
+[22/Jun/2023 16:08:14] "GET /static/main/css/custom.css HTTP/1.1" 200 420
+[22/Jun/2023 16:08:14] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 31000
+[22/Jun/2023 16:08:15] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[22/Jun/2023 16:08:16] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[22/Jun/2023 16:08:16] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:08:17] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[22/Jun/2023 16:08:19] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:08:19] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[22/Jun/2023 16:08:19] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[22/Jun/2023 16:08:20] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+[22/Jun/2023 16:08:21] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[22/Jun/2023 16:08:22] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[22/Jun/2023 16:08:26] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[22/Jun/2023 16:08:30] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 443137
+[22/Jun/2023 16:08:34] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 1680460
+[22/Jun/2023 16:08:37] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 2388188
+Not Found: /favicon.ico
+[22/Jun/2023 16:08:37] "GET /favicon.ico HTTP/1.1" 404 3815
+[22/Jun/2023 16:09:08] "GET /members/profile/2/ HTTP/1.1" 200 18414
+[22/Jun/2023 16:09:09] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 304 0
+[22/Jun/2023 16:09:09] "GET /static/main/css/custom.css HTTP/1.1" 304 0
+[22/Jun/2023 16:09:09] "GET /static/main/css/style.css HTTP/1.1" 304 0
+[22/Jun/2023 16:09:09] "GET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:09] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:09] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 304 0
+[22/Jun/2023 16:09:10] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 344
+[22/Jun/2023 16:09:15] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:09:16] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 304 0
+[22/Jun/2023 16:09:16] "GET /static/main/images/top_img3.png HTTP/1.1" 304 0
+[22/Jun/2023 16:09:16] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 304 0
+[22/Jun/2023 16:09:16] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:17] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:17] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:17] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:09:17] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:17] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:17] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:09:17] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 304 0
+[22/Jun/2023 16:09:17] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+[22/Jun/2023 16:18:50] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[22/Jun/2023 16:18:51] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[22/Jun/2023 16:19:10] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:19:11] "GET /static/main/css/style.css HTTP/1.1" 200 1235
+[22/Jun/2023 16:19:11] "GET /static/main/css/font-awesome.min.css HTTP/1.1" 200 31000
+[22/Jun/2023 16:19:11] "GET /static/main/css/custom.css HTTP/1.1" 200 420
+[22/Jun/2023 16:19:13] "GET /static/main/images/TapN%20Blue%20%26%20White(1).png HTTP/1.1" 200 4093
+[22/Jun/2023 16:19:13] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:19:16] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:19:16] "GET /static/main/images/TapN%20Double%20Card.png HTTP/1.1" 200 67037
+[22/Jun/2023 16:19:17] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+[22/Jun/2023 16:19:17] "GET /images/profile/IMG_20230520_185944_9PmrK9V.jpg HTTP/1.1" 200 80206
+[22/Jun/2023 16:19:18] "GET /images/profile/ayo-ogunseinde-6W4F62sN_yI-unsplash_I5a2LKb.jpg HTTP/1.1" 200 30894
+[22/Jun/2023 16:19:18] "GET /images/profile/defaultBizman_yUod4xl.jpg HTTP/1.1" 200 23550
+[22/Jun/2023 16:19:19] "GET /static/main/images/top_img3.png HTTP/1.1" 200 371312
+[22/Jun/2023 16:19:19] "GET /images/profile/oie_4238485zP3l3XV_200z1c8.jpg HTTP/1.1" 200 12609
+[22/Jun/2023 16:19:20] "GET /static/main/images/Tap%20N%20Card%20Demo%20Ad%20White%20Male(2).png HTTP/1.1" 200 465201
+[22/Jun/2023 16:19:23] "GET /images/profile/IMG_4631_iTqdWpq.jpeg HTTP/1.1" 200 443137
+[22/Jun/2023 16:19:37] "GET /images/profile/bannon-morrissy-RxiAV5LC-ww-unsplash_c2En4j8.jpg HTTP/1.1" 200 1680460
+[22/Jun/2023 16:19:39] "GET /images/profile/nowah-bartscher-n84u5XBB9GI-unsplash_4bNrhKL.jpg HTTP/1.1" 200 2388188
+Not Found: /favicon.ico
+[22/Jun/2023 16:19:40] "GET /favicon.ico HTTP/1.1" 404 3815
+[22/Jun/2023 16:20:05] "GET /members/profile/2/ HTTP/1.1" 200 18414
+[22/Jun/2023 16:20:06] "GET /members/profile/2/?download_qrcode HTTP/1.1" 200 344
+[22/Jun/2023 16:20:06] "GET /images/profile/IMG_20230520_185938_r9arDQX.jpg HTTP/1.1" 200 192189
+[22/Jun/2023 16:20:24] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:20:24] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:20:25] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:20:25] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+[22/Jun/2023 16:22:08] "GET /members/profile/3/ HTTP/1.1" 200 18490
+[22/Jun/2023 16:22:08] "GET /members/profile/3/?download_qrcode HTTP/1.1" 200 347
+[22/Jun/2023 16:22:33] "GET /images/profile/Psalms30.5_nhXhhpm.jpeg HTTP/1.1" 200 6983400
+[22/Jun/2023 16:22:50] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:22:51] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:22:51] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:22:51] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+[22/Jun/2023 16:34:44] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:34:44] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:34:45] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:34:45] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+[22/Jun/2023 16:43:53] "GET /members/profile/5/ HTTP/1.1" 200 18431
+[22/Jun/2023 16:43:53] "GET /members/profile/5/?download_qrcode HTTP/1.1" 200 346
+[22/Jun/2023 16:43:55] "GET /images/profile/background6_bHOaARe.jpg HTTP/1.1" 200 1181969
+[22/Jun/2023 16:44:10] "GET / HTTP/1.1" 200 19702
+[22/Jun/2023 16:44:11] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1978
+[22/Jun/2023 16:44:11] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1975
+[22/Jun/2023 16:44:12] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1972
+Watching for file changes with StatReloader
+[23/Jun/2023 02:32:49] "GET / HTTP/1.1" 200 19702
+[23/Jun/2023 02:32:49] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[23/Jun/2023 02:32:49] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[23/Jun/2023 02:32:50] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[23/Jun/2023 02:33:02] "GET / HTTP/1.1" 200 19702
+[23/Jun/2023 02:33:02] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[23/Jun/2023 02:33:02] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[23/Jun/2023 02:33:02] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968
+[23/Jun/2023 02:33:04] "GET / HTTP/1.1" 200 19702
+[23/Jun/2023 02:33:04] "GET /static/main/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 404 1974
+[23/Jun/2023 02:33:05] "GET /static/main/fonts/fontawesome-webfont.woff?v=4.7.0 HTTP/1.1" 404 1971
+[23/Jun/2023 02:33:05] "GET /static/main/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1" 404 1968

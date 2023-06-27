@@ -44,6 +44,23 @@
     {% block content %}
 
 
+	    
+   
+	{% if messages %}
+
+                {% for  message in messages %}
+
+                <br/><div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>{{ message }}</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                {% endfor %}
+
+
+         {% endif %}
+
+
     
     
     
@@ -57,19 +74,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 footer-blurb-item">
-						<h3><span class="glyphicon glyphicon-fire"></span> Dynamically Procrastinate</h3>
-						<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-						<p><a class="btn btn-default" href="#">Procrastinate</a></p>
+						<h3><span class="glyphicon glyphicon-fire"></span> Smart Contact Technology</h3>
+						<p>TapNcard.com is a cutting-edge technology company that is revolutionizing social media networking. Our platform integrates smart card nfc technology with an online profile ,messaging capabilities that allows users to transfer contact information with a simple tap, while also connecting with like-minded individuals in their network. With TapN, you can effortlessly keep up with movers and shakers in your industry, creating valuable connections and expanding your professional network. Say goodbye to traditional business cards and hello to a smarter, more efficient way of networking with TapN.</p>
+						
 					</div>
 					<div class="col-sm-4 footer-blurb-item">
-						<h3><span class="glyphicon glyphicon-cloud-upload"></span> Efficiently Unleash</h3>
-						<p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. </p>
-						<p><a class="btn btn-default" href="#">Unleash</a></p>
+						<h3><span class="glyphicon glyphicon-cloud-upload"></span> Free Online Profile</h3>
+						<p>Get Tapped-N by filling out your profile page with your social media accounts like Facebook, Instagram, Twitter, or adding your music links such as SoundCloud, Spotify, or Apple Music, or even your financial links like Cash App, Venmo, PayPal, and more, you can allow others to easily access whatever you deem necessary with just a tap? Plus, we also have NFC tags available for your furry friends! If your pet gets lost, the finder can simply scan the tag and you’ll receive a message through email, SMS, or or you could receive a phone call whichever method you prefer. Keep your connections and belongings easily accessible with Tapncard.com </p>
+					
 					</div>
 					<div class="col-sm-4 footer-blurb-item">
-						<h3><span class="glyphicon glyphicon-leaf"></span> Completely Synergize</h3>
-						<p>Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-						<p><a class="btn btn-default" href="#">Synergize</a></p>
+						<h3><span class="glyphicon glyphicon-leaf"></span> Stylish Designs</h3>
+						<p>Our designs are sleek and sophisticated, featuring black and white cards with the latest NFC chip technology. We also offer tags in a variety of vibrant colors, each of which includes an NFC chip. These tags serve as both stylish ipet tags and smart business tools. With our designs, you'll be able to seamlessly integrate technology into your everyday life while maintaining a chic and polished appearance.</p>
+					
 					</div>
 
 				</div>
@@ -79,7 +96,7 @@
         
         <div class="small-print">
         	<div class="container">
-        		<p><a href="#">Terms &amp; Conditions</a> | <a href="#">Privacy Policy</a> | <a href="{% url 'contact' %}">Contact</a></p>
+        		<p><a href="{% url 'terms' %}">Terms &amp; Conditions</a> | <a href="{% url 'privacy' %}">Privacy Policy</a> | <a href="{% url 'contact' %}">Contact</a></p>
         		<p>Copyright &copy; TapNCard.Com 2023 </p>
         	</div>
         </div>

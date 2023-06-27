@@ -26,8 +26,9 @@ SECRET_KEY = 'django-insecure-(xdp93%5%ps9bhgujj@%r!@l%*zk=#b9t2-3!1@ton=_8_s_%3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['45.33.121.187','127.0.0.1', 'tapncard.com']
+ALLOWED_HOSTS = ['50.116.1.245','127.0.0.1', 'tapncard.com']
 
+#EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # Application definition
 
@@ -40,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'members',
-    
+    'django_extensions',
+    'sslserver',    
     
 
 ]
@@ -79,12 +81,15 @@ WSGI_APPLICATION = 'DjangoApp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
 
 
 
@@ -126,7 +131,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 MEDIA_ROOT = "/media/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -135,6 +140,8 @@ STATICFILES_DIR = (
     os.path.join(BASE_DIR, 'static'),
 
 )
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 
 

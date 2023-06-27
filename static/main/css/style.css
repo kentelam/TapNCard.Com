@@ -1,0 +1,78 @@
+
+    header {
+      position:relative;
+      left:0;
+      top:0;
+      width:100%;
+      min-height:120px;
+      padding:50px 0;
+      color:#fff;
+      background: #383838 no-repeat center center;
+      margin-bottom:30px
+    }
+    
+    /* Logo */
+    header .logo {
+    clear:both;
+    display:block;
+    text-align:center;
+    padding-bottom:10px;
+
+    }
+    
+    /* Title */
+    header h1 {
+        font-weight:300;
+        font-size:24px;
+        color:#eee;	
+      letter-spacing:2px;
+      text-align:center;
+      text-transform:uppercase;
+      margin:0 !important;
+      padding-bottom:25px;
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open Sans:400,600,800');
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    div,
+    input,
+    p,
+    a {
+        font-family: "Open Sans";
+        margin: 0px;
+    }
+    
+    a,
+    a:hover,
+    a:focus {
+        color: inherit;
+    }
+    
+    body {
+        background-color: #F1F2F3;
+    }
+    
+    .container-fluid,
+    .container {
+        max-width: 1200px;
+    }
+    
+    .card-container {
+        padding: 100px 0px;
+        -webkit-perspective: 1000;
+        perspective: 1000;
+    }
+    
+
+    
+ 
+    
+   
+    
+    
+  

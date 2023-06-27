@@ -8,10 +8,23 @@
 
 {% block content %}
 
+	{% if messages %}
+
+                {% for  message in messages %}
+
+                <br/><div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>{{ user }}</strong><p>{{ message }}</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                {% endfor %}
+
+
+         {% endif %}
+	
+
 
 <!--Feature-->
-
-
 <section id="header" class="jumbotron text-center">
     <br><br>
     <h3 class="display-3">Welcome</h3>
@@ -29,55 +42,66 @@
     
 </section>
 <br><br>
- 
+
 <section id="gallery">
  <div class="container">
    <div class="row">
    <div class="col-lg-4 mb-4">
    <div class="card">
-     <img src="{% static 'main/images/Tap N Card Demo Ad White Male(2).png'%} " alt="" class="card-img-top">
+ {% if tapncard %}
+     <img src="{{ tapncard.ad_picture1.url }}" alt="" class="card-img-top">
+ {% endif %}
      <div class="card-body">
        <h5 class="card-title">Smart Contact Technology</h5>
        <p class="card-text">TapNcard.com is a cutting-edge technology company that is revolutionizing social media networking.
-        Our platform integrates smart card nfc technology with an online profile ,messaging capabilities that allows users to transfer contact information with a simple tap, 
-        while also connecting with like-minded individuals in their network. With TapN, you can effortlessly keep up with movers and shakers in your industry, creating valuable connections and expanding your professional network. 
+        Our platform integrates smart card nfc technology with an online profile ,messaging capabilities that allows users to transfer contact information with a simple tap,
+        while also connecting with like-minded individuals in their network. With TapN, you can effortlessly keep up with movers and shakers in your industry, creating valuable connections and expanding your professional network.
         Say goodbye to traditional business cards and hello to a smarter, more efficient way of networking with TapN.</p>
       <br>
-       <a href="" class="btn btn-outline-secondary">Read More</a>
-      
+
+
      </div>
     </div>
    </div>
  <div class="col-lg-4 mb-4">
  <div class="card">
-     <img src="{% static 'main/images/top_img3.png'%} " alt="" class="card-img-top">
+ {% if tapncard %}
+     <img src="{{ tapncard.ad_picture2.url }}" alt="" class="card-img-top">
+ {% endif %}
+
+
      <div class="card-body">
        <h5 class="card-title">Free Online Profile</h5>
-       <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+       <p class="card-text">Get Tapped-N by filling out your profile page with your social media accounts like Facebook, Instagram, Twitter, or adding your music links such as SoundCloud, Spotify, or Apple Music, or even your financial links like Cash App, Venmo, PayPal, and more, you can allow others to easily access whatever you deem necessary with just a tap? Plus, we also have NFC tags available for your furry friends! If your pet gets lost, the finder can simply scan the tag and you’ll receive a message through email, SMS, or or you could receive a phone call whichever method you prefer. Keep your connections and belongings easily accessible with Tapncard.com</p>
        <br>
-       <a href="" class="btn btn-outline-secondary">Read More</a>
+
        <!--<a href="" class="btn btn-outline-danger btn-sm"><i class="fa fa-heart"></i></a>-->
      </div>
      </div>
    </div>
    <div class="col-lg-4 mb-4">
    <div class="card">
-     <img src="{% static 'main/images/TapN Double Card.png'%} " alt="" class="card-img-top">
+ {% if tapncard %}
+     <img src="{{ tapncard.ad_picture3.url }}" alt="" class="card-img-top">
+ {% endif %}
+
+
      <div class="card-body">
        <h5 class="card-title">Stylish Designs</h5>
-       <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+       <p class="card-text">Our designs are sleek and sophisticated, featuring black and white cards with the latest NFC chip technology. We also offer tags in a variety of vibrant colors, each of which includes an NFC chip. These tags serve as both stylish ipet tags and smart business tools. With our designs, you'll be able to seamlessly integrate technology into your everyday life while maintaining a chic and polished appearance.</p>
        <br>
-       <a href="" class="btn btn-outline-secondary">Read More</a>
+
        <!--<a href="" class="btn btn-outline-danger btn-sm"><i class="fa fa-heart"></i></a>-->
      </div>
     </div>
-    
+
    </div>
-   
+
  </div>
  <br><br>
  <!---->
 
+ 
       <!-- Profile Card -->
        
   <div class="container-fluid">
@@ -112,7 +136,44 @@
     {% endfor %}
 
   <!--End Profile Card-->
-     
+<style>
+
+body {
+	padding: 0;
+	margin: 0;
+	color: #959595;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	color: #878787;
+	}
+	
+.feature {
+	background-color: #222222;
+	color: rgb(255, 255, 255);
+	}
+	
+.article-intro {
+    margin-bottom: 25px;
+}
+
+.footer-blurb {
+    padding: 30px 0;
+    background-color: #222222;
+    color: #9a9a9a;
+}
+    
+.footer-blurb-item {
+    padding: 30px;
+    }
+ 
+.small-print {
+	background-color: #fff;
+	padding: 30px 0;
+}
+
+
+</style>     
  
   {% endblock  %}
 

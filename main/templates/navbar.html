@@ -1,13 +1,25 @@
 
 {% load static %}
+
+<!-- Define a template filter to fetch the Tapncard object -->
+{% with tapncard_obj=Tapncard.objects.first %}
+  <!-- Check if the Tapncard object exists -->
  
 
        <!-- Navigation -->
+	
     
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark">
 
         <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'main/images/TapN Blue & White(1).png' %}" style="height: fit-content;" width="fit-content"></a>
+
+    <!-- Display the logo image -->                                                      	 
+        <a class="navbar-brand" href="{% url 'home' %}"><img src="{{ tapncard.logo.url }}" style="height: fit-content;" width="fit-content"></a>
+
+{% endwith %}
+	
+                                                         	
+ 	
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             {% if user.is_authenticated %}
 
@@ -25,7 +37,7 @@
 
           {% endif %}
             
-            
+           
 
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,7 +70,7 @@
               </li>
               {% if user.is_authenticated %}
 
-                    {% if post.pk %}
+                    {% if user.pk %}
                         <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Members
@@ -85,7 +97,7 @@
                             <li class="dropdown-item"><a class="nav-link" href="{% url 'create-profile' user.id %}">Create Profile</a></li>-->              
 
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="{% url 'pets'  %}">Pet Profile</a></li>
+                            <li><a class="dropdown-item" href="{% url 'change_password' %}">Change Password</a></li>
                           </li>
                     {% else %}
 
@@ -115,3 +127,4 @@
           </div>
         </div>
       </nav>
+

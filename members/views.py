@@ -1,10 +1,15 @@
+from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
+from django.contrib import messages
 from django.shortcuts import render , redirect,get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
+from django.contrib.auth.views import PasswordChangeView
 from django.views import generic
 from .models import Post, Profile
+from main .models import Tapncard
 from .forms import PostForm, AddProfileForm
 import pyqrcode
 from io import BytesIO
@@ -12,21 +17,55 @@ import os
 
 # Create your views here.
 
+
+def change_password(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(request.user, request.POST)
+        if form.is_valid():
+            user = form.save()
+            update_session_auth_hash(request, user)  # Important!
+            messages.success(request, 'Your password was successfully updated!')
+            return redirect('home')
+        else:
+            messages.error('Please correct the error below.')
+    else:
+        form = PasswordChangeForm(request.user)
+    return render(request, 'registration/change_password.html', {
+        'form': form
+    })
+
+
+
+
+
+
 class UserRegisterView(generic.CreateView):
     form_class = UserCreationForm
     template_name = 'registration/register.html'
+   
     success_url = reverse_lazy('login')
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
+        context['tapncard'] = tapncard
+        return context
 
 
 class AddProfileView(CreateView):
 
     model = Post
 
-    #fields = '__all__'
-
+    
     form_class = AddProfileForm
 
     template_name = 'registration/add-profile.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
+        context['tapncard'] = tapncard
+        return context
+
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -40,6 +79,12 @@ class ProfileView(DetailView):
    
     
     template_name = 'members/profile.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
+        context['tapncard'] = tapncard
+        return context
 
 
     # Search Function to Query Post model in multiple fields
@@ -148,6 +193,14 @@ class ProfileView(DetailView):
 
 
 #@login_required
+def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
+        context['tapncard'] = tapncard
+        return context
+
+
+
 
 def profile_editor(request, pk):
 
