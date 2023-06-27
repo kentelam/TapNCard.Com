@@ -19,6 +19,7 @@ import os
 
 
 def change_password(request):
+    tapncard = Tapncard.objects.first()
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
@@ -30,9 +31,7 @@ def change_password(request):
             messages.error('Please correct the error below.')
     else:
         form = PasswordChangeForm(request.user)
-    return render(request, 'registration/change_password.html', {
-        'form': form
-    })
+    return render(request, 'registration/change_password.html', {'form': form, 'tapncard': tapncard})
 
 
 
@@ -190,19 +189,20 @@ class ProfileView(DetailView):
         return self.render_to_response(context)
 
 
-
-
-#@login_required
-def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
-        context['tapncard'] = tapncard
-        return context
+    def get_context_data(self, **kwargs):
+            context = super().get_context_data(**kwargs)
+            tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
+            context['tapncard'] = tapncard
+            return context
 
 
 
 
 def profile_editor(request, pk):
+
+   
+    tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
+       
 
     # Get the UserProfile object for the given pk, or create a new one.
     post = get_object_or_404(Post, pk=pk) if pk else Post()
@@ -223,16 +223,17 @@ def profile_editor(request, pk):
         
             return redirect('profile', pk=post.pk)
 
-    return render(request, 'members/edit.html', {'post': post, 'form':form})
+    return render(request, 'members/edit.html', {'post': post, 'form':form, 'tapncard':tapncard})
 
 
 
 
 
 def pet_profile(request):
+        tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
 
         return render(request, 'members/petprofile.html', {
-
+            'tapncard':tapncard,
             #'searched': searched,
             #'profile':profile,
         })

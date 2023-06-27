@@ -56,7 +56,12 @@ def search_view(request):
 
 
 def about(request):
-    return render(request, 'main/about.html', {})
+    
+    
+    tapncard = Tapncard.objects.first()  # Get the first Tapncard object (y>
+   
+      
+    return render(request, 'main/about.html', {'tapncard': tapncard})
 
 
 
@@ -69,20 +74,19 @@ class ContactFormView(FormView):
 
     # URL NOT a template.html
     success_url = '/thankyou/'
+    
+    # Tapncard.com Logo
     def get_context_data(self, **kwargs):
      context = super().get_context_data(**kwargs)
      tapncard = Tapncard.objects.first()  # Get the first Tapncard object (you can modify this logic as needed)
      context['tapncard'] = tapncard
      return context
 
-   
-	
-
     # what to do with form?
     def form_valid(self, form):
 
        print(form.cleaned_data)
-      
+       #email
     
        return super().form_valid(form)
    
