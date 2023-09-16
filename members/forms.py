@@ -83,7 +83,8 @@ class PostForm(ModelForm):
 
         model = Post
 
-        fields = '__all__'
+        fields = ['username','full_name' ,'profile_picture','business','phone_number','email_address','website','job_title','about','background_banner','facebook','instagram','tiktok','twitter','linkedin','paypal','cashapp','snap','discord','twitch','spotify','apple_music','sound_cloud']
+
 
         
 
