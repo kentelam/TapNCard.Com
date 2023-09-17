@@ -115,7 +115,7 @@
   <div class="product-card">
 		<!--<div class="badge">Member</div> -->
 		<div class="product-tumb">
-			<img src="{{ post.profile_picture.url }}" alt="">
+			<a href="{% url 'profile' post.pk %}"><img src="{{ post.profile_picture.url }}"></a> 
 		</div>
 		<div class="product-details">
 			<span class="product-catagory">{{post.job_title}}</span>
