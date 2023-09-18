@@ -30,7 +30,7 @@
     <h3 class="display-3">Welcome</h3>
 
     {% if user.is_authenticated %}
-        {% if user.pk %}     
+        {% if user.id == user.pk %}     
           <p class="lead">{{ user.post.username }}</p>
           <p class="lead">{{ user.post.business }}</p>
         {% endif %}
@@ -111,6 +111,13 @@
     
     
   {% for post in posts %}
+
+     
+ </div><!-- END container -->
+
+
+
+
 
   <div class="product-card">
 		<!--<div class="badge">Member</div> -->
@@ -312,6 +319,9 @@ a
 .product-links a:hover {
     color: #fbb72c;
 }
+
+
+
 
 </style>     
  

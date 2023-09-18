@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
 
 
+<!--Profile Test-->
+
+
+
+<!--Profile Test-->
+
+
+
+
+
   <div class="wrapper">
     <div class="profile-card">
       <div class="profile-header">
@@ -39,7 +49,7 @@
          
           <button class="msg-btn"><a style="text-decoration: none;" href="?download_vcard=True">Add Contact</a></button>
           {% if user.is_authenticated %}
-            {% if user.pk %}     
+            {% if user.pk == post.user.pk %}     
             <button class="follow-btn"><a style="text-decoration: none;" href="{% url 'edit' post.pk %}">Edit</a></button>
             {% endif %}
           {% endif %}
@@ -188,6 +198,12 @@
 
 </div>
         <!--End Profile Dashboard-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <br>
   <br>
   <br>
@@ -451,12 +467,50 @@ button{
 
 
 
+
+
+
+
+
+
+
+
+
+body {
+  color: #2b2c48;
+  font-family: "Jost", sans-serif;
+  background-image: url("{{ post.background_banner.url }}");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
  
   </style>
 
   
 
-
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   
 
 
