@@ -237,14 +237,19 @@ a
     align-items: center;
     justify-content: center;
     height: 400px;
-    padding: 20px;
+    
     background: #f0f0f0;
 }
 
 .product-tumb img {
-    width: 330px;
-    height: 330px;
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    min-height: 380px;
+    max-width: 22.50em;
+    min-width: 380px;
+    object-fit: fill;
+    border-radius: 5px;
 }
 
 .product-details {
