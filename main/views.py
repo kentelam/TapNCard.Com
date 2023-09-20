@@ -20,6 +20,7 @@ import os
 
 class HomeView(ListView):
     model = Post
+    queryset = Post.objects.exclude(full_name="Your Name Here", business="Your Company Name", job_title="Your Title", email_address="youremail@mail.com")
     template_name = 'main/home.html'
     context_object_name = 'posts'
 
